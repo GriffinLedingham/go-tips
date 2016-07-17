@@ -45,16 +45,45 @@ display:inline-block;
 margin-left:20px;
 margin-right:20px;
 text-align:center;
+position: relative;
+}
+
+.pk-glow {
+position:absolute;
+top:0;
+left:0;
+border-radius:100%;
+background: rgba(0,0,0,0);
+height:120px;
+width:100%;
+opacity: 0;
+transition: opacity  0.5s;
+z-index: 1;
+}
+
+.pokedex-item:hover .pk-glow{
+border-radius:100%;
+opacity: 0.3;
+transition: opacity  0.5s;
+background: -moz-radial-gradient(center, ellipse cover,  rgba(92,193,179,1) 0%, rgba(115,187,217,0) 71%, rgba(125,185,232,0) 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(92,193,179,1) 0%,rgba(115,187,217,0) 71%,rgba(125,185,232,0) 100%);
+background: radial-gradient(ellipse at center,  rgba(92,193,179,1) 0%,rgba(115,187,217,0) 71%,rgba(125,185,232,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cc1b3', endColorstr='#007db9e8',GradientType=1 );
+
 }
 
 .pk-name {
 text-transform: capitalize;
+position:relative;
+z-index: 2;
 }
 
 .pk-sprite {
 background: url('/images/sprites.png');
 height: 120px;
 width: 120px;
+position:relative;
+z-index: 2;
 }
 
 .pk-sprite.bulbasaur {
