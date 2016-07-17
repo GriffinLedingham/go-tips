@@ -1,0 +1,50 @@
+html {
+height: 100%;
+}
+
+body {
+background: #5cc1b3;
+background: -moz-linear-gradient(top,  #5cc1b3 0%, #b5ee9f 100%);
+background: -webkit-linear-gradient(top,  #5cc1b3 0%,#b5ee9f 100%);
+background: linear-gradient(to bottom,  #5cc1b3 0%,#b5ee9f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cc1b3', endColorstr='#b5ee9f',GradientType=0 );
+overflow:hidden;
+margin:0;
+height:100%;
+font-family: Lato;
+}
+
+#header {
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 50px;
+background: white;
+box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
+}
+
+#content_wrapper {
+padding-top:100px;
+overflow-y:scroll;
+height: 100%;
+width:100%;
+}
+
+#contents {
+margin-left: 100px;
+margin-right: 100px;
+background: white;
+box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
+padding:50px;
+margin-bottom: 300px;
+}
+
+.pk-sprite {
+background: url('/images/sprites.png');
+}
+
+.pk-sprite.bulbasaur {
+height: 120px;
+width: 120px;
+}
