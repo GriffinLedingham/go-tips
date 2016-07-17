@@ -1,4 +1,5 @@
 var data = require('../data/pokemon.json')
+var cp_data = require('../data/cp_up.json')
 var jsonfile = require('jsonfile')
 
 var pokemon_data = []
@@ -33,6 +34,11 @@ for(var i in data){
     var stam = stats['BaseStamina']
     var atk = stats['BaseAttack']
     var def = stats['BaseDefense']
+
+    var cp = '?'
+    if(cp_data.hasOwnProperty(name[0].toUpperCase() + name.slice(1))){
+      cp = cp_data[name[0].toUpperCase() + name.slice(1)]
+    }
 
     var quick_moves_encoded = pokemon['QuickMoves']
     var quick_moves = []
@@ -111,6 +117,8 @@ for(var i in data){
     }
 
     var evolution = false
+    var family = false
+
     if(pokemon.hasOwnProperty('Evolution')){
       var evolution_encoded = pokemon['Evolution']
       if(evolution_encoded.indexOf('\\001') == -1){
@@ -162,7 +170,8 @@ for(var i in data){
         attack: atk,
         defense: def,
         height: height,
-        weight: weight
+        weight: weight,
+        cp: cp
       },
       quick_moves: quick_moves,
       special_moves: cine_moves
@@ -170,6 +179,7 @@ for(var i in data){
     if(evolution != false) {
       output.evolution = evolution
       output.evolution_cost = pokemon['CandyToEvolve']
+      output.family = family
     }
     pokemon_data.push(output)
   }
