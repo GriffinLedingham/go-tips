@@ -40,11 +40,43 @@ padding:50px;
 margin-bottom: 300px;
 }
 
+.pokedex-item {
+display:inline-block;
+margin-left:20px;
+margin-right:20px;
+text-align:center;
+}
+
+.pk-name {
+text-transform: capitalize;
+}
+
 .pk-sprite {
 background: url('/images/sprites.png');
+height: 120px;
+width: 120px;
 }
 
 .pk-sprite.bulbasaur {
-height: 120px;
-width: 120px;
+
+}
+
+.pk-sprite.ivysaur {
+background-position-x: -130px;
+}
+
+.pk-sprite.venusaur {
+background-position-x: -255px;
+}
+
+.pk-sprite.charmander {
+background-position-x: -640px;
+}
+
+.pk-sprite.charmeleon {
+background-position-x: -765px;
+}
+
+.pk-sprite.charizard {
+background-position-x: -905px;
 }

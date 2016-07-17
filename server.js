@@ -11,7 +11,15 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname + '/client'))
 
 app.get('/', function(req, res){
-  res.send(handlebars.loadTemplate('home.handlebars'))
+  var data = [
+    {name:'bulbasaur'},
+    {name:'ivysaur'},
+    {name:'venusaur'},
+    {name:'charmander'},
+    {name:'charmeleon'},
+    {name:'charizard'}
+  ]
+  res.send(handlebars.loadTemplate('pokedex.handlebars', {pokemon: data}))
   res.end()
 })
 

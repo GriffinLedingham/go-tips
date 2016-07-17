@@ -10,7 +10,12 @@
     </div>
     <div id="content_wrapper">
       <div id="contents">
-        <div class="pk-sprite bulbasaur"></div>
+        {{#pokemon}}
+        <a class="pokedex-item">
+          <div class="pk-sprite {{name}}"></div>
+          <span class="pk-name">{{name}}</span>
+        </a>
+        {{/pokemon}}
       </div>
     </div>
   </body>
