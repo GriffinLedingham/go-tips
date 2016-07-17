@@ -9,8 +9,31 @@
       <img id="header_logo" src="/images/go-logo-alt.png" />
     </div>
     <div id="content_wrapper">
-      <div id="contents">
-        Name: {{name}}
+      <div id="pk_sprite_wrapper">
+        <div id="pk_sprite_sphere_wrapper">
+          <div id="pk_sprite_sphere"></div>
+          <div id="pk_sprite_sphere_dot"></div>
+        </div>
+        <img id="pk_profile_sprite" src="/images/sprites/{{name}}.png" />
+      </div>
+      <div id="pk_contents">
+        <div id="pk_name">{{name}}</div>
+        <div id="pk_health_bar"></div>
+        <div id="pk_health">HP {{stats.hp}} / {{stats.hp}}</div>
+        <div id="pk_info">
+          <div class="pk-info-item">
+            <div class="pk-info-item-text">{{type}}</div>
+            <div class="pk-info-item-title">Type</div>
+          </div>
+          <div class="pk-info-item">
+            <div class="pk-info-item-text">{{stats.weight}}</div>
+            <div class="pk-info-item-title">Weight</div>
+          </div>
+          <div class="pk-info-item">
+            <div class="pk-info-item-text">{{stats.height}}</div>
+            <div class="pk-info-item-title">Height</div>
+          </div>
+        </div>
 
         <br><br>
 

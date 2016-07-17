@@ -16,6 +16,14 @@ for(var i in data){
       type.push(pokemon['Type2'].split('TYPE_')[1].toLowerCase())
     }
 
+    type = type.join().replace(',',' / ')
+
+    var height = pokemon['PokedexHeightM']
+    var weight = pokemon['PokedexWeightKg']
+
+    height = (height*(1-pokemon['HeightStdDev'])).toFixed(2) + ' - ' + (height*(1+pokemon['HeightStdDev'])).toFixed(2)
+    weight = (weight*(1-pokemon['WeightStdDev'])).toFixed(2) + ' - ' + (weight*(1+pokemon['WeightStdDev'])).toFixed(2)
+
     var encounter = pokemon['Encounter']
     var cap_rate = encounter['BaseCaptureRate']
     var flee_rate = encounter['BaseFleeRate']
@@ -152,7 +160,9 @@ for(var i in data){
       stats: {
         hp: stam,
         attack: atk,
-        defense: def
+        defense: def,
+        height: height,
+        weight: weight
       },
       quick_moves: quick_moves,
       special_moves: cine_moves
