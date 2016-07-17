@@ -2,6 +2,10 @@ html {
 height: 100%;
 }
 
+a {
+text-decoration: none;
+}
+
 body {
 background: #5cc1b3;
 background: -moz-linear-gradient(top,  #5cc1b3 0%, #b5ee9f 100%);
@@ -87,6 +91,8 @@ text-transform: capitalize;
 position:relative;
 top: -10px;
 z-index: 2;
+text-decoration: none;
+color:black;
 }
 
 .pk-sprite {

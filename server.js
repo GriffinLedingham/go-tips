@@ -16,6 +16,24 @@ app.get('/', function(req, res){
   res.end()
 })
 
+app.get('/pokemon/:pokemon', function(req, res){
+  var data = require('./data/pokemon_data.json')
+  var pokemon = false
+  if(req.params.hasOwnProperty('pokemon')){
+    for(var i in data){
+      if(data[i].name.toLowerCase().indexOf(req.params['pokemon'].toLowerCase()) != -1){
+        pokemon = data[i]
+        break
+      }
+    }
+  }
+  if(pokemon != false)
+    res.send(handlebars.loadTemplate('pokemon.handlebars', pokemon))
+  else
+    res.send(404)
+  res.end()
+})
+
 app.get('/tips/:pokemon', function(req, res){
   res.send(handlebars.loadTemplate('tips.handlebars', {pokemon: req.params.pokemon}))
   res.end()

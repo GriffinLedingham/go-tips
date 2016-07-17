@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="header">
+      <img id="header_logo" src="/images/go-logo-alt.png" />
+    </div>
+    <div id="content_wrapper">
+      <div id="contents">
+        Name: {{name}}
+
+        <br><br>
+
+        ID: {{id}}
+
+        <br><br>
+
+        Type: {{#each type}}
+          {{this}}
+        {{/each}}
+
+        <br><br>
+
+        Stats: <br>{{#each stats}}
+          {{@key}}: {{this}}
+        {{/each}}
+
+        <br><br>
+
+        Stats (alternate way of accessing stats property):<br>
+        {{#stats}}
+          hp: {{hp}}
+          attack: {{attack}}
+          defense: {{defense}}
+        {{/stats}}
+
+        <br><br>
+
+        Basic Moves:<br>
+        {{#each quick_moves}}
+          ID:{{id}}<br>
+          Name: {{name}}<br><br>
+        {{/each}}
+
+        <br><br>
+
+        Special Moves:<br>
+        {{#each special_moves}}
+          ID:{{id}}<br>
+          Name: {{name}}<br><br>
+        {{/each}}
+
+        <br><br>
+
+        Evolution:<br>
+        {{#evolution}}
+          ID: {{id}}<br>
+          Name: {{name}}<br><br>
+        {{/evolution}}
+
+        <br><br>
+
+        Evolution Cost:<br>
+        {{evolution_cost}}
+      </div>
+    </div>
+  </body>
+</html>
