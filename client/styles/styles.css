@@ -22,6 +22,14 @@ right: 0px;
 height: 50px;
 background: white;
 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
+height: 80px;
+text-align: center;
+z-index: 3;
+}
+
+#header_logo {
+height: 100px;
+margin-top: -10px;
 }
 
 #content_wrapper {
@@ -32,12 +40,13 @@ width:100%;
 }
 
 #contents {
-margin-left: 100px;
-margin-right: 100px;
+margin-left: 30px;
+margin-right: 30px;
 background: white;
 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
 padding:50px;
 margin-bottom: 300px;
+text-align: center;
 }
 
 .pokedex-item {
@@ -46,6 +55,7 @@ margin-left:20px;
 margin-right:20px;
 text-align:center;
 position: relative;
+margin-bottom:20px;
 }
 
 .pk-glow {
@@ -75,37 +85,70 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cc1b3', end
 .pk-name {
 text-transform: capitalize;
 position:relative;
+top: -10px;
 z-index: 2;
 }
 
 .pk-sprite {
 background: url('/images/sprites.png');
-height: 120px;
-width: 120px;
+height: 128px;
+width: 128px;
 position:relative;
 z-index: 2;
 }
 
-.pk-sprite.bulbasaur {
+.pk-sprite.bulbasaur {background-position-x: 0px;}
+.pk-sprite.ivysaur {background-position-x: -128px;}
+.pk-sprite.venusaur {background-position-x: -256px;}
+.pk-sprite.charmander {background-position-x: -640px;}
+.pk-sprite.charmeleon {background-position-x: -768px;}
+.pk-sprite.charizard {background-position-x: -896px;}
 
-}
+.pk-sprite.squirtle {background-position-y:-128px;background-position-x: 0px;}
+.pk-sprite.wartortle {background-position-y:-128px;background-position-x: -128px;}
+.pk-sprite.blastoise {background-position-y:-128px;background-position-x: -256px;}
+.pk-sprite.caterpie {background-position-y:-128px;background-position-x: -512px;}
+.pk-sprite.metapod {background-position-y:-128px;background-position-x: -640px;}
+.pk-sprite.butterfree {background-position-y:-128px;background-position-x: -768px;}
 
-.pk-sprite.ivysaur {
-background-position-x: -130px;
-}
+.pk-sprite.weedle {background-position-y:-128px;background-position-x: -1028px;}
+.pk-sprite.kakuna {background-position-y:-128px;background-position-x: -1156px;}
+.pk-sprite.beedrill {background-position-y:-256px;background-position-x: 0px;}
+.pk-sprite.pidgey {background-position-y:-256px;background-position-x: -256px;}
+.pk-sprite.pidgeotto {background-position-y:-256px;background-position-x: -384px;}
+.pk-sprite.pidgeot {background-position-y:-256px;background-position-x: -512px;}
 
-.pk-sprite.venusaur {
-background-position-x: -255px;
-}
+.pk-sprite.rattata {background-position-y:-256px;background-position-x: -768px;}
+.pk-sprite.raticate {background-position-y:-256px;background-position-x: -1028px;}
+.pk-sprite.spearow {background-position-y:-384px;background-position-x: 0px;}
+.pk-sprite.fearow {background-position-y:-384px;background-position-x: -128px;}
+.pk-sprite.ekans {background-position-y:-384px;background-position-x: -256px;}
+.pk-sprite.arbok {background-position-y:-384px;background-position-x: -384px;}
 
-.pk-sprite.charmander {
-background-position-x: -640px;
-}
+.pk-sprite.pikachu {background-position-y:-384px;background-position-x: -512px;}
+.pk-sprite.raichu {background-position-y:-384px;background-position-x: -896px;}
+.pk-sprite.sandshrew {background-position-y:-384px;background-position-x: -1152px;}
+.pk-sprite.sandslash {background-position-y:-512px;background-position-x: -0px;}
+.pk-sprite.nidoran {background-position-y:-512px;background-position-x: -128px;}
+.pk-sprite.nidorina {background-position-y:-512px;background-position-x: -256px;}
 
-.pk-sprite.charmeleon {
-background-position-x: -765px;
-}
+.pk-sprite.nidoqueen {background-position-y:-512px;background-position-x: -384px;}
+.pk-sprite.nidoran {background-position-y:-512px;background-position-x: -128px;}
+.pk-sprite.nidorino {background-position-y:-512px;background-position-x: -640px;}
+.pk-sprite.nidoking {background-position-y:-512px;background-position-x: -768px;}
+.pk-sprite.clefairy {background-position-y:-512px;background-position-x: -896px;}
+.pk-sprite.clefable {background-position-y:-512px;background-position-x: -1024px;}
 
-.pk-sprite.charizard {
-background-position-x: -905px;
-}
+.pk-sprite.vulpix {background-position-y:-512px;background-position-x: -1152px;}
+.pk-sprite.ninetales {background-position-y:-640px;background-position-x: -0px;}
+.pk-sprite.jigglypuff {background-position-y:-640px;background-position-x: -128px;}
+.pk-sprite.wigglytuff {background-position-y:-640px;background-position-x: -256px;}
+.pk-sprite.zubat {background-position-y:-640px;background-position-x: -384px;}
+.pk-sprite.golbat {background-position-y:-640px;background-position-x: -640px;}
+
+.pk-sprite.oddish {background-position-y:-640px;background-position-x: -896px;}
+.pk-sprite.gloom {background-position-y:-640px;background-position-x: -1024px;}
+.pk-sprite.vileplume {background-position-y:-768px;background-position-x: -0px;}
+.pk-sprite.paras {background-position-y:-768px;background-position-x: -256px;}
+.pk-sprite.parasect {background-position-y:-768px;background-position-x: -384px;}
+.pk-sprite.venonat {background-position-y:-768px;background-position-x: -512px;}
