@@ -20,5 +20,10 @@ app.get('/tips/:pokemon', function(req, res){
   res.end()
 })
 
+app.get('*', function(req, res){
+  res.send(404)
+  res.end()
+})
+
 var server = http.createServer(app)
 server.listen(3000)
