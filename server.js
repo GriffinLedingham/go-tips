@@ -21,7 +21,7 @@ app.get('/pokemon/:pokemon', function(req, res){
   var pokemon = false
   if(req.params.hasOwnProperty('pokemon')){
     for(var i in data){
-      if(data[i].name.toLowerCase().indexOf(req.params['pokemon'].toLowerCase()) != -1){
+      if(data[i].name.toLowerCase() == req.params['pokemon'].toLowerCase()){
         pokemon = data[i]
         break
       }
