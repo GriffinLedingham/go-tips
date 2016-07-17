@@ -21,8 +21,8 @@ for(var i in data){
     var height = pokemon['PokedexHeightM']
     var weight = pokemon['PokedexWeightKg']
 
-    height = (height*(1-pokemon['HeightStdDev'])).toFixed(2) + ' - ' + (height*(1+pokemon['HeightStdDev'])).toFixed(2)
-    weight = (weight*(1-pokemon['WeightStdDev'])).toFixed(2) + ' - ' + (weight*(1+pokemon['WeightStdDev'])).toFixed(2)
+    height = parseFloat(height-pokemon['HeightStdDev']).toFixed(2) + ' - ' + parseFloat(height+pokemon['HeightStdDev']).toFixed(2)
+    weight = parseFloat(weight-pokemon['WeightStdDev']).toFixed(2) + ' - ' + parseFloat(weight+pokemon['WeightStdDev']).toFixed(2)
 
     var encounter = pokemon['Encounter']
     var cap_rate = encounter['BaseCaptureRate']
