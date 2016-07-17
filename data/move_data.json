@@ -1,0 +1,1190 @@
+[
+  {
+    "name": "wrap",
+    "id": 13,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4000,
+    "energy": -20
+  },
+  {
+    "name": "hyper_beam",
+    "id": 14,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 5000,
+    "energy": -100
+  },
+  {
+    "name": "dark_pulse",
+    "id": 16,
+    "type": "dark",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3500,
+    "energy": -33
+  },
+  {
+    "name": "sludge",
+    "id": 18,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2600,
+    "energy": -25
+  },
+  {
+    "name": "vice_grip",
+    "id": 20,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -20
+  },
+  {
+    "name": "flame_wheel",
+    "id": 21,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4600,
+    "energy": -25
+  },
+  {
+    "name": "megahorn",
+    "id": 22,
+    "type": "bug",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3200,
+    "energy": -100
+  },
+  {
+    "name": "flamethrower",
+    "id": 24,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2900,
+    "energy": -50
+  },
+  {
+    "name": "dig",
+    "id": 26,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 5800,
+    "energy": -33
+  },
+  {
+    "name": "cross_chop",
+    "id": 28,
+    "type": "fighting",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 2000,
+    "energy": -100
+  },
+  {
+    "name": "psybeam",
+    "id": 30,
+    "type": "psychic",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3800,
+    "energy": -25
+  },
+  {
+    "name": "earthquake",
+    "id": 31,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4200,
+    "energy": -100
+  },
+  {
+    "name": "stone_edge",
+    "id": 32,
+    "type": "rock",
+    "accuracy": 1,
+    "crit": 0.5,
+    "duration": 3100,
+    "energy": -100
+  },
+  {
+    "name": "ice_punch",
+    "id": 33,
+    "type": "ice",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3500,
+    "energy": -33
+  },
+  {
+    "name": "heart_stamp",
+    "id": 34,
+    "type": "psychic",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2550,
+    "energy": -25
+  },
+  {
+    "name": "discharge",
+    "id": 35,
+    "type": "electric",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2500,
+    "energy": -33
+  },
+  {
+    "name": "flash_cannon",
+    "id": 36,
+    "type": "steel",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3900,
+    "energy": -33
+  },
+  {
+    "name": "drill_peck",
+    "id": 38,
+    "type": "flying",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2700,
+    "energy": -33
+  },
+  {
+    "name": "ice_beam",
+    "id": 39,
+    "type": "ice",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3650,
+    "energy": -50
+  },
+  {
+    "name": "blizzard",
+    "id": 40,
+    "type": "ice",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3900,
+    "energy": -100
+  },
+  {
+    "name": "heat_wave",
+    "id": 42,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3800,
+    "energy": -100
+  },
+  {
+    "name": "aerial_ace",
+    "id": 45,
+    "type": "flying",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2900,
+    "energy": -25
+  },
+  {
+    "name": "drill_run",
+    "id": 46,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 3400,
+    "energy": -33
+  },
+  {
+    "name": "petal_blizzard",
+    "id": 47,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3200,
+    "energy": -50
+  },
+  {
+    "name": "mega_drain",
+    "id": 48,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3200,
+    "energy": -20
+  },
+  {
+    "name": "bug_buzz",
+    "id": 49,
+    "type": "bug",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4250,
+    "energy": -50
+  },
+  {
+    "name": "poison_fang",
+    "id": 50,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2400,
+    "energy": -20
+  },
+  {
+    "name": "night_slash",
+    "id": 51,
+    "type": "dark",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 2700,
+    "energy": -25
+  },
+  {
+    "name": "bubble_beam",
+    "id": 53,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2900,
+    "energy": -25
+  },
+  {
+    "name": "submission",
+    "id": 54,
+    "type": "fighting",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -33
+  },
+  {
+    "name": "low_sweep",
+    "id": 56,
+    "type": "fighting",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2250,
+    "energy": -25
+  },
+  {
+    "name": "aqua_jet",
+    "id": 57,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2350,
+    "energy": -20
+  },
+  {
+    "name": "aqua_tail",
+    "id": 58,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2350,
+    "energy": -50
+  },
+  {
+    "name": "seed_bomb",
+    "id": 59,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2400,
+    "energy": -33
+  },
+  {
+    "name": "psyshock",
+    "id": 60,
+    "type": "psychic",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2700,
+    "energy": -33
+  },
+  {
+    "name": "ancient_power",
+    "id": 62,
+    "type": "rock",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3600,
+    "energy": -25
+  },
+  {
+    "name": "rock_tomb",
+    "id": 63,
+    "type": "rock",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 3400,
+    "energy": -25
+  },
+  {
+    "name": "rock_slide",
+    "id": 64,
+    "type": "rock",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3200,
+    "energy": -33
+  },
+  {
+    "name": "power_gem",
+    "id": 65,
+    "type": "rock",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2900,
+    "energy": -33
+  },
+  {
+    "name": "shadow_sneak",
+    "id": 66,
+    "type": "ghost",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3100,
+    "energy": -20
+  },
+  {
+    "name": "shadow_punch",
+    "id": 67,
+    "type": "ghost",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -25
+  },
+  {
+    "name": "ominous_wind",
+    "id": 69,
+    "type": "ghost",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3100,
+    "energy": -25
+  },
+  {
+    "name": "shadow_ball",
+    "id": 70,
+    "type": "ghost",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3080,
+    "energy": -33
+  },
+  {
+    "name": "magnet_bomb",
+    "id": 72,
+    "type": "steel",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2800,
+    "energy": -25
+  },
+  {
+    "name": "iron_head",
+    "id": 74,
+    "type": "steel",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2000,
+    "energy": -33
+  },
+  {
+    "name": "parabolic_charge",
+    "id": 75,
+    "type": "electric",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -20
+  },
+  {
+    "name": "thunder_punch",
+    "id": 77,
+    "type": "electric",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2400,
+    "energy": -33
+  },
+  {
+    "name": "thunder",
+    "id": 78,
+    "type": "electric",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4300,
+    "energy": -100
+  },
+  {
+    "name": "thunderbolt",
+    "id": 79,
+    "type": "electric",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2700,
+    "energy": -50
+  },
+  {
+    "name": "twister",
+    "id": 80,
+    "type": "dragon",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2700,
+    "energy": -20
+  },
+  {
+    "name": "dragon_pulse",
+    "id": 82,
+    "type": "dragon",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3600,
+    "energy": -50
+  },
+  {
+    "name": "dragon_claw",
+    "id": 83,
+    "type": "dragon",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 1500,
+    "energy": -50
+  },
+  {
+    "name": "disarming_voice",
+    "id": 84,
+    "type": "fairy",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3900,
+    "energy": -20
+  },
+  {
+    "name": "draining_kiss",
+    "id": 85,
+    "type": "fairy",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2800,
+    "energy": -20
+  },
+  {
+    "name": "dazzling_gleam",
+    "id": 86,
+    "type": "fairy",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4200,
+    "energy": -33
+  },
+  {
+    "name": "moonblast",
+    "id": 87,
+    "type": "fairy",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4100,
+    "energy": -100
+  },
+  {
+    "name": "play_rough",
+    "id": 88,
+    "type": "fairy",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2900,
+    "energy": -50
+  },
+  {
+    "name": "cross_poison",
+    "id": 89,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 1500,
+    "energy": -25
+  },
+  {
+    "name": "sludge_bomb",
+    "id": 90,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2600,
+    "energy": -50
+  },
+  {
+    "name": "sludge_wave",
+    "id": 91,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3400,
+    "energy": -100
+  },
+  {
+    "name": "gunk_shot",
+    "id": 92,
+    "type": "poison",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3000,
+    "energy": -100
+  },
+  {
+    "name": "bone_club",
+    "id": 94,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 1600,
+    "energy": -25
+  },
+  {
+    "name": "bulldoze",
+    "id": 95,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3400,
+    "energy": -25
+  },
+  {
+    "name": "mud_bomb",
+    "id": 96,
+    "type": "ground",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2600,
+    "energy": -25
+  },
+  {
+    "name": "signal_beam",
+    "id": 99,
+    "type": "bug",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3100,
+    "energy": -33
+  },
+  {
+    "name": "x_scissor",
+    "id": 100,
+    "type": "bug",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -33
+  },
+  {
+    "name": "flame_charge",
+    "id": 101,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3100,
+    "energy": -20
+  },
+  {
+    "name": "flame_burst",
+    "id": 102,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -25
+  },
+  {
+    "name": "fire_blast",
+    "id": 103,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4100,
+    "energy": -100
+  },
+  {
+    "name": "brine",
+    "id": 104,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2400,
+    "energy": -25
+  },
+  {
+    "name": "water_pulse",
+    "id": 105,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3300,
+    "energy": -25
+  },
+  {
+    "name": "scald",
+    "id": 106,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4000,
+    "energy": -33
+  },
+  {
+    "name": "hydro_pump",
+    "id": 107,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3800,
+    "energy": -100
+  },
+  {
+    "name": "psychic",
+    "id": 108,
+    "type": "psychic",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2800,
+    "energy": -50
+  },
+  {
+    "name": "psystrike",
+    "id": 109,
+    "type": "psychic",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 5100,
+    "energy": -100
+  },
+  {
+    "name": "icy_wind",
+    "id": 111,
+    "type": "ice",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3800,
+    "energy": -20
+  },
+  {
+    "name": "giga_drain",
+    "id": 114,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3600,
+    "energy": -33
+  },
+  {
+    "name": "fire_punch",
+    "id": 115,
+    "type": "fire",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2800,
+    "energy": -33
+  },
+  {
+    "name": "solar_beam",
+    "id": 116,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4900,
+    "energy": -100
+  },
+  {
+    "name": "leaf_blade",
+    "id": 117,
+    "type": "grass",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 2800,
+    "energy": -50
+  },
+  {
+    "name": "power_whip",
+    "id": 118,
+    "type": "grass",
+    "accuracy": 1,
+    "duration": 2800,
+    "energy": -100
+  },
+  {
+    "name": "air_cutter",
+    "id": 121,
+    "type": "flying",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 3300,
+    "energy": -25
+  },
+  {
+    "name": "hurricane",
+    "id": 122,
+    "type": "flying",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3200,
+    "energy": -100
+  },
+  {
+    "name": "brick_break",
+    "id": 123,
+    "type": "fighting",
+    "accuracy": 1,
+    "crit": 0.25,
+    "duration": 1600,
+    "energy": -33
+  },
+  {
+    "name": "swift",
+    "id": 125,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3000,
+    "energy": -25
+  },
+  {
+    "name": "horn_attack",
+    "id": 126,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2200,
+    "energy": -25
+  },
+  {
+    "name": "stomp",
+    "id": 127,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -25
+  },
+  {
+    "name": "hyper_fang",
+    "id": 129,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 2100,
+    "energy": -33
+  },
+  {
+    "name": "body_slam",
+    "id": 131,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 1560,
+    "energy": -50
+  },
+  {
+    "name": "rest",
+    "id": 132,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 3100,
+    "energy": -33
+  },
+  {
+    "name": "struggle",
+    "id": 133,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 1695,
+    "energy": -20
+  },
+  {
+    "name": "scald_blastoise",
+    "id": 134,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 4000,
+    "energy": -33
+  },
+  {
+    "name": "hydro_pump_blastoise",
+    "id": 135,
+    "type": "water",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3800,
+    "energy": -100
+  },
+  {
+    "name": "wrap_green",
+    "id": 136,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3700,
+    "energy": -20
+  },
+  {
+    "name": "wrap_pink",
+    "id": 137,
+    "type": "normal",
+    "accuracy": 1,
+    "crit": 0.05,
+    "duration": 3700,
+    "energy": -20
+  },
+  {
+    "name": "fury_cutter_fast",
+    "id": 200,
+    "type": "bug",
+    "accuracy": 1,
+    "duration": 400,
+    "energy": 12
+  },
+  {
+    "name": "bug_bite_fast",
+    "id": 201,
+    "type": "bug",
+    "accuracy": 1,
+    "duration": 450,
+    "energy": 7
+  },
+  {
+    "name": "bite_fast",
+    "id": 202,
+    "type": "dark",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "sucker_punch_fast",
+    "id": 203,
+    "type": "dark",
+    "accuracy": 1,
+    "duration": 700,
+    "energy": 4
+  },
+  {
+    "name": "dragon_breath_fast",
+    "id": 204,
+    "type": "dragon",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "thunder_shock_fast",
+    "id": 205,
+    "type": "electric",
+    "accuracy": 1,
+    "duration": 600,
+    "energy": 7
+  },
+  {
+    "name": "spark_fast",
+    "id": 206,
+    "type": "electric",
+    "accuracy": 1,
+    "duration": 700,
+    "energy": 4
+  },
+  {
+    "name": "low_kick_fast",
+    "id": 207,
+    "type": "fighting",
+    "accuracy": 1,
+    "duration": 600,
+    "energy": 7
+  },
+  {
+    "name": "karate_chop_fast",
+    "id": 208,
+    "type": "fighting",
+    "accuracy": 1,
+    "duration": 800,
+    "energy": 7
+  },
+  {
+    "name": "ember_fast",
+    "id": 209,
+    "type": "fire",
+    "accuracy": 1,
+    "duration": 1050,
+    "energy": 7
+  },
+  {
+    "name": "wing_attack_fast",
+    "id": 210,
+    "type": "flying",
+    "accuracy": 1,
+    "duration": 750,
+    "energy": 7
+  },
+  {
+    "name": "peck_fast",
+    "id": 211,
+    "type": "flying",
+    "accuracy": 1,
+    "duration": 1150,
+    "energy": 10
+  },
+  {
+    "name": "lick_fast",
+    "id": 212,
+    "type": "ghost",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "shadow_claw_fast",
+    "id": 213,
+    "type": "ghost",
+    "accuracy": 1,
+    "duration": 950,
+    "energy": 7
+  },
+  {
+    "name": "vine_whip_fast",
+    "id": 214,
+    "type": "grass",
+    "accuracy": 1,
+    "duration": 650,
+    "energy": 7
+  },
+  {
+    "name": "razor_leaf_fast",
+    "id": 215,
+    "type": "grass",
+    "accuracy": 1,
+    "duration": 1450,
+    "energy": 7
+  },
+  {
+    "name": "mud_shot_fast",
+    "id": 216,
+    "type": "ground",
+    "accuracy": 1,
+    "duration": 550,
+    "energy": 7
+  },
+  {
+    "name": "ice_shard_fast",
+    "id": 217,
+    "type": "ice",
+    "accuracy": 1,
+    "duration": 1400,
+    "energy": 7
+  },
+  {
+    "name": "frost_breath_fast",
+    "id": 218,
+    "type": "ice",
+    "accuracy": 1,
+    "duration": 810,
+    "energy": 7
+  },
+  {
+    "name": "quick_attack_fast",
+    "id": 219,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 1330,
+    "energy": 7
+  },
+  {
+    "name": "scratch_fast",
+    "id": 220,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "tackle_fast",
+    "id": 221,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 1100,
+    "energy": 7
+  },
+  {
+    "name": "pound_fast",
+    "id": 222,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 540,
+    "energy": 7
+  },
+  {
+    "name": "cut_fast",
+    "id": 223,
+    "type": "normal",
+    "accuracy": 1,
+    "duration": 1130,
+    "energy": 7
+  },
+  {
+    "name": "poison_jab_fast",
+    "id": 224,
+    "type": "poison",
+    "accuracy": 1,
+    "duration": 1050,
+    "energy": 7
+  },
+  {
+    "name": "acid_fast",
+    "id": 225,
+    "type": "poison",
+    "accuracy": 1,
+    "duration": 1050,
+    "energy": 7
+  },
+  {
+    "name": "psycho_cut_fast",
+    "id": 226,
+    "type": "psychic",
+    "accuracy": 1,
+    "duration": 570,
+    "energy": 7
+  },
+  {
+    "name": "rock_throw_fast",
+    "id": 227,
+    "type": "rock",
+    "accuracy": 1,
+    "duration": 1360,
+    "energy": 7
+  },
+  {
+    "name": "metal_claw_fast",
+    "id": 228,
+    "type": "steel",
+    "accuracy": 1,
+    "duration": 630,
+    "energy": 7
+  },
+  {
+    "name": "bullet_punch_fast",
+    "id": 229,
+    "type": "steel",
+    "accuracy": 1,
+    "duration": 1200,
+    "energy": 7
+  },
+  {
+    "name": "water_gun_fast",
+    "id": 230,
+    "type": "water",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "splash_fast",
+    "id": 231,
+    "type": "water",
+    "accuracy": 1,
+    "duration": 1230,
+    "energy": 7
+  },
+  {
+    "name": "water_gun_fast_blastoise",
+    "id": 232,
+    "type": "water",
+    "accuracy": 1,
+    "duration": 500,
+    "energy": 7
+  },
+  {
+    "name": "mud_slap_fast",
+    "id": 233,
+    "type": "ground",
+    "accuracy": 1,
+    "duration": 1350,
+    "energy": 9
+  },
+  {
+    "name": "zen_headbutt_fast",
+    "id": 234,
+    "type": "psychic",
+    "accuracy": 1,
+    "duration": 1050,
+    "energy": 4
+  },
+  {
+    "name": "confusion_fast",
+    "id": 235,
+    "type": "psychic",
+    "accuracy": 1,
+    "duration": 1510,
+    "energy": 7
+  },
+  {
+    "name": "poison_sting_fast",
+    "id": 236,
+    "type": "poison",
+    "accuracy": 1,
+    "duration": 575,
+    "energy": 4
+  },
+  {
+    "name": "bubble_fast",
+    "id": 237,
+    "type": "water",
+    "accuracy": 1,
+    "duration": 2300,
+    "energy": 15
+  },
+  {
+    "name": "feint_attack_fast",
+    "id": 238,
+    "type": "dark",
+    "accuracy": 1,
+    "duration": 1040,
+    "energy": 7
+  },
+  {
+    "name": "steel_wing_fast",
+    "id": 239,
+    "type": "steel",
+    "accuracy": 1,
+    "duration": 1330,
+    "energy": 4
+  },
+  {
+    "name": "fire_fang_fast",
+    "id": 240,
+    "type": "fire",
+    "accuracy": 1,
+    "duration": 840,
+    "energy": 4
+  },
+  {
+    "name": "rock_smash_fast",
+    "id": 241,
+    "type": "fighting",
+    "accuracy": 1,
+    "duration": 1410,
+    "energy": 7
+  }
+]
