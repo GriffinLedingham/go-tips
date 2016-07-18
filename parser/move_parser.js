@@ -21,7 +21,7 @@ for(var i in data){
       var abs_energy = Math.abs(energy)
       energy_array = []
       for(var i = 0;i<Math.floor(100/abs_energy);i++){
-        energy_array.push({id: i, percent: (150*(abs_energy/100))-10})
+        energy_array.push({id: i, percent: (150*(abs_energy/100))-10+2})
       }
     }
 
