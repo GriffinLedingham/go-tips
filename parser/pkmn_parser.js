@@ -8,7 +8,7 @@ var pokemon_data = []
 for(var i in data){
   if(data[i].hasOwnProperty('Pokemon')){
     var pokemon = data[i]['Pokemon']
-    var name = pokemon['UniqueID'].split('POKEMON_')[1].toLowerCase()
+    var name = pokemon['UniqueID'].split('POKEMON_')[1].toLowerCase().replace('_', ' ')
     var id = parseInt(pokemon['UniqueID'].split('_POKEMON')[0].replace('V',''))
     var type = []
     if(pokemon.hasOwnProperty('Type1')){
