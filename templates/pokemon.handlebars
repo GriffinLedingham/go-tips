@@ -70,7 +70,10 @@
         <div id="pk_special_move_info">
           {{#special_moves}}
           <div class="pk-move-item">
-            <span class="pk-move-title">{{name}}</span>
+            <div class="pk-move-title">{{name}}</div>
+            <div class="pk-move-cost">
+              {{#energy_array}}<div class="pk-move-cost-item" style="width:{{percent}}px;"></div>{{/energy_array}}
+            </div>
             <span class="pk-move-type {{type}}">{{type}}</span>
             <span class="pk-move-damage">{{power}}</span>
           </div>

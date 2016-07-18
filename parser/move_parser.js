@@ -14,6 +14,16 @@ for(var i in data){
     var duration = move['DurationMs']
     var energy = move['EnergyDelta']
     var power = move['Power']
+    var energy_array = false
+
+    if(energy < 0){
+      console.log(energy)
+      var abs_energy = Math.abs(energy)
+      energy_array = []
+      for(var i = 0;i<Math.floor(100/abs_energy);i++){
+        energy_array.push({id: i, percent: (150*(abs_energy/100))-10})
+      }
+    }
 
     var output = {
       name: name,
@@ -25,6 +35,8 @@ for(var i in data){
       duration: duration,
       energy: energy
     }
+    if(energy_array != false)
+      output.energy_array = energy_array
     move_data.push(output)
   }
 }

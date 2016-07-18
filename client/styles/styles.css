@@ -372,6 +372,26 @@ top: 30px;
 text-transform: capitalize;
 }
 
+.pk-move-cost {
+position: absolute;
+top: 13px;
+margin-left: 10px;
+left: 150px;
+}
+
+.pk-move-cost-item {
+display:inline-block;
+height:10px;
+background: rgb(68,180,252);
+background: -moz-linear-gradient(top,  rgba(68,180,252,1) 0%, rgba(104,225,251,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(68,180,252,1) 0%,rgba(104,225,251,1) 100%);
+background: linear-gradient(to bottom,  rgba(68,180,252,1) 0%,rgba(104,225,251,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b4fc', endColorstr='#68e1fb',GradientType=0 );
+margin-left:3px;
+border:3px solid #afdaff;
+border-radius:5px;
+}
+
 .pk-move-type.normal {color:    #A8A878;}
 .pk-move-type.fire {color:      #F08030;}
 .pk-move-type.water {color:     #6890F0;}
