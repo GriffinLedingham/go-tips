@@ -113,14 +113,12 @@ for(var i in data){
         }
       }
     }
-
     for(var j = 0;j<cine_moves.length;j++){
       var move_id = cine_moves[j]
       for(var k = 0;k<data.length;k++){
         if(data[k].hasOwnProperty('Move')){
           if(data[k]['TemplateId'].indexOf(move_id) != -1){
             var move_name = data[k]['TemplateId'].split('MOVE_')[1].toLowerCase()
-
             var move_data = false
             for(var move_index in moves){
               if(moves[move_index]['id'] == move_id){

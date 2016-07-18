@@ -39,7 +39,7 @@ right: 0px;
 background: #0c172d;
 color:white;
 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
-height: 80px;
+height: 120px;
 text-align: center;
 z-index: 3;
 padding: 50px;
@@ -603,3 +603,7 @@ border-radius:5px;
 .pk-sprite.dragonite {background-position-y:-2308px;background-position-x: -512px;}
 .pk-sprite.mewtwo {background-position-y:-2308px;background-position-x: -640px;}
 .pk-sprite.mew {background-position-y:-2308px;background-position-x: -1024px;}
+
+.pikalytics-link {
+  color: #fdd800;
+}
