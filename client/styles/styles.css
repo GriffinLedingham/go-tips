@@ -427,182 +427,182 @@ border-radius:5px;
 .pk-move-type.dragon {color:    #7038f8;}
 .pk-move-type.fairy {color:     #ffaec9;}
 
-.pk-sprite.bulbasaur {background-position-x: 0px;}
-.pk-sprite.ivysaur {background-position-x: -128px;}
-.pk-sprite.venusaur {background-position-x: -256px;}
-.pk-sprite.charmander {background-position-x: -640px;}
-.pk-sprite.charmeleon {background-position-x: -768px;}
-.pk-sprite.charizard {background-position-x: -896px;}
+.pk-sprite.bulbasaur {background-position: 0px 0px;}
+.pk-sprite.ivysaur {background-position: -128px 0px;}
+.pk-sprite.venusaur {background-position: -256px 0px;}
+.pk-sprite.charmander {background-position: -640px 0px;}
+.pk-sprite.charmeleon {background-position: -768px 0px;}
+.pk-sprite.charizard {background-position: -896px 0px;}
 
-.pk-sprite.squirtle {background-position-y:-128px;background-position-x: 0px;}
-.pk-sprite.wartortle {background-position-y:-128px;background-position-x: -128px;}
-.pk-sprite.blastoise {background-position-y:-128px;background-position-x: -256px;}
-.pk-sprite.caterpie {background-position-y:-128px;background-position-x: -512px;}
-.pk-sprite.metapod {background-position-y:-128px;background-position-x: -640px;}
-.pk-sprite.butterfree {background-position-y:-128px;background-position-x: -768px;}
+.pk-sprite.squirtle {background-position: 0px; -128px;}
+.pk-sprite.wartortle {background-position: -128px -128px;}
+.pk-sprite.blastoise {background-position: -256px -128px;}
+.pk-sprite.caterpie {background-position: -512px -128px;}
+.pk-sprite.metapod {background-position: -640px -128px;}
+.pk-sprite.butterfree {background-position: -768px -128px;}
 
-.pk-sprite.weedle {background-position-y:-128px;background-position-x: -1028px;}
-.pk-sprite.kakuna {background-position-y:-128px;background-position-x: -1156px;}
-.pk-sprite.beedrill {background-position-y:-256px;background-position-x: 0px;}
-.pk-sprite.pidgey {background-position-y:-256px;background-position-x: -256px;}
-.pk-sprite.pidgeotto {background-position-y:-256px;background-position-x: -384px;}
-.pk-sprite.pidgeot {background-position-y:-256px;background-position-x: -512px;}
+.pk-sprite.weedle {background-position: -1028px -128px;}
+.pk-sprite.kakuna {background-position: -1156px -128px;}
+.pk-sprite.beedrill {background-position: 0px; -256px;}
+.pk-sprite.pidgey {background-position: -256px -256px;}
+.pk-sprite.pidgeotto {background-position: -384px -256px;}
+.pk-sprite.pidgeot {background-position: -512px -256px;}
 
-.pk-sprite.rattata {background-position-y:-256px;background-position-x: -768px;}
-.pk-sprite.raticate {background-position-y:-256px;background-position-x: -1028px;}
-.pk-sprite.spearow {background-position-y:-384px;background-position-x: 0px;}
-.pk-sprite.fearow {background-position-y:-384px;background-position-x: -128px;}
-.pk-sprite.ekans {background-position-y:-384px;background-position-x: -256px;}
-.pk-sprite.arbok {background-position-y:-384px;background-position-x: -384px;}
+.pk-sprite.rattata {background-position: -768px -256px;}
+.pk-sprite.raticate {background-position: -1028px -256px;}
+.pk-sprite.spearow {background-position: 0px; -384px;}
+.pk-sprite.fearow {background-position: -128px -384px;}
+.pk-sprite.ekans {background-position: -256px -384px;}
+.pk-sprite.arbok {background-position: -384px -384px;}
 
-.pk-sprite.pikachu {background-position-y:-384px;background-position-x: -512px;}
-.pk-sprite.raichu {background-position-y:-384px;background-position-x: -896px;}
-.pk-sprite.sandshrew {background-position-y:-384px;background-position-x: -1152px;}
-.pk-sprite.sandslash {background-position-y:-512px;background-position-x: -0px;}
-.pk-sprite.nidoran-f {background-position-y:-512px;background-position-x: -128px;}
-.pk-sprite.nidorina {background-position-y:-512px;background-position-x: -256px;}
+.pk-sprite.pikachu {background-position: -512px -384px;}
+.pk-sprite.raichu {background-position: -896px -384px;}
+.pk-sprite.sandshrew {background-position: -1152px -384px;}
+.pk-sprite.sandslash {background-position: -0px -512px;}
+.pk-sprite.nidoran-f {background-position: -128px -512px;}
+.pk-sprite.nidorina {background-position: -256px -512px;}
 
-.pk-sprite.nidoqueen {background-position-y:-512px;background-position-x: -384px;}
-.pk-sprite.nidoran-m {background-position-y:-512px;background-position-x: -512px;}
-.pk-sprite.nidorino {background-position-y:-512px;background-position-x: -640px;}
-.pk-sprite.nidoking {background-position-y:-512px;background-position-x: -768px;}
-.pk-sprite.clefairy {background-position-y:-512px;background-position-x: -896px;}
-.pk-sprite.clefable {background-position-y:-512px;background-position-x: -1024px;}
+.pk-sprite.nidoqueen {background-position: -384px -512px;}
+.pk-sprite.nidoran-m {background-position: -512px -512px;}
+.pk-sprite.nidorino {background-position: -640px -512px;}
+.pk-sprite.nidoking {background-position: -768px -512px;}
+.pk-sprite.clefairy {background-position: -896px -512px;}
+.pk-sprite.clefable {background-position: -1024px -512px;}
 
-.pk-sprite.vulpix {background-position-y:-512px;background-position-x: -1152px;}
-.pk-sprite.ninetales {background-position-y:-640px;background-position-x: -0px;}
-.pk-sprite.jigglypuff {background-position-y:-640px;background-position-x: -128px;}
-.pk-sprite.wigglytuff {background-position-y:-640px;background-position-x: -256px;}
-.pk-sprite.zubat {background-position-y:-640px;background-position-x: -384px;}
-.pk-sprite.golbat {background-position-y:-640px;background-position-x: -640px;}
+.pk-sprite.vulpix {background-position: -1152px -512px;}
+.pk-sprite.ninetales {background-position: -0px -640px;}
+.pk-sprite.jigglypuff {background-position: -128px -640px;}
+.pk-sprite.wigglytuff {background-position: -256px -640px;}
+.pk-sprite.zubat {background-position: -384px -640px;}
+.pk-sprite.golbat {background-position: -640px -640px;}
 
-.pk-sprite.oddish {background-position-y:-640px;background-position-x: -896px;}
-.pk-sprite.gloom {background-position-y:-640px;background-position-x: -1024px;}
-.pk-sprite.vileplume {background-position-y:-768px;background-position-x: -0px;}
-.pk-sprite.paras {background-position-y:-768px;background-position-x: -256px;}
-.pk-sprite.parasect {background-position-y:-768px;background-position-x: -384px;}
-.pk-sprite.venonat {background-position-y:-768px;background-position-x: -512px;}
+.pk-sprite.oddish {background-position: -896px -640px;}
+.pk-sprite.gloom {background-position: -1024px -640px;}
+.pk-sprite.vileplume {background-position: -0px -768px;}
+.pk-sprite.paras {background-position: -256px -768px;}
+.pk-sprite.parasect {background-position: -384px -768px;}
+.pk-sprite.venonat {background-position: -512px -768px;}
 
-.pk-sprite.venomoth {background-position-y:-768px;background-position-x: -640px;}
-.pk-sprite.diglett {background-position-y:-768px;background-position-x: -768px;}
-.pk-sprite.dugtrio {background-position-y:-768px;background-position-x: -896px;}
-.pk-sprite.meowth {background-position-y:-768px;background-position-x: -1024px;}
-.pk-sprite.persian {background-position-y:-768px;background-position-x: -1156px;}
-.pk-sprite.psyduck {background-position-y:-896px;background-position-x: -0px;}
+.pk-sprite.venomoth {background-position: -640px -768px;}
+.pk-sprite.diglett {background-position: -768px -768px;}
+.pk-sprite.dugtrio {background-position: -896px -768px;}
+.pk-sprite.meowth {background-position: -1024px -768px;}
+.pk-sprite.persian {background-position: -1156px -768px;}
+.pk-sprite.psyduck {background-position: -0px -896px;}
 
-.pk-sprite.golduck {background-position-y:-896px;background-position-x: -128px;}
-.pk-sprite.mankey {background-position-y:-896px;background-position-x: -256px;}
-.pk-sprite.primeape {background-position-y:-896px;background-position-x: -384px;}
-.pk-sprite.growlithe {background-position-y:-896px;background-position-x: -512px;}
-.pk-sprite.arcanine {background-position-y:-896px;background-position-x: -648px;}
-.pk-sprite.poliwag {background-position-y:-896px;background-position-x: -768px;}
+.pk-sprite.golduck {background-position: -128px -896px;}
+.pk-sprite.mankey {background-position: -256px -896px;}
+.pk-sprite.primeape {background-position: -384px -896px;}
+.pk-sprite.growlithe {background-position: -512px -896px;}
+.pk-sprite.arcanine {background-position: -648px -896px;}
+.pk-sprite.poliwag {background-position: -768px -896px;}
 
-.pk-sprite.poliwhirl {background-position-y:-896px;background-position-x: -896px;}
-.pk-sprite.poliwrath {background-position-y:-896px;background-position-x: -1024px;}
-.pk-sprite.abra {background-position-y:-896px;background-position-x: -1156px;}
-.pk-sprite.kadabra {background-position-y:-1024px;background-position-x: -0px;}
-.pk-sprite.alakazam {background-position-y:-1024px;background-position-x: -256px;}
-.pk-sprite.machop {background-position-y:-1024px;background-position-x: -640px;}
+.pk-sprite.poliwhirl {background-position: -896px -896px;}
+.pk-sprite.poliwrath {background-position: -1024px -896px;}
+.pk-sprite.abra {background-position: -1156px -896px;}
+.pk-sprite.kadabra {background-position: -0px -1024px;}
+.pk-sprite.alakazam {background-position: -256px -1024px;}
+.pk-sprite.machop {background-position: -640px -1024px;}
 
-.pk-sprite.machoke {background-position-y:-1024px;background-position-x: -768px;}
-.pk-sprite.machamp {background-position-y:-1024px;background-position-x: -896px;}
-.pk-sprite.bellsprout {background-position-y:-1024px;background-position-x: -1024px;}
-.pk-sprite.weepinbell {background-position-y:-1024px;background-position-x: -1156px;}
-.pk-sprite.victreebel {background-position-y:-1156px;background-position-x: -0px;}
-.pk-sprite.tentacool {background-position-y:-1156px;background-position-x: -128px;}
+.pk-sprite.machoke {background-position: -768px -1024px;}
+.pk-sprite.machamp {background-position: -896px -1024px;}
+.pk-sprite.bellsprout {background-position: -1024px -1024px;}
+.pk-sprite.weepinbell {background-position: -1156px -1024px;}
+.pk-sprite.victreebel {background-position: -0px -1156px;}
+.pk-sprite.tentacool {background-position: -128px -1156px;}
 
-.pk-sprite.tentacruel {background-position-y:-1156px;background-position-x: -256px;}
-.pk-sprite.geodude {background-position-y:-1156px;background-position-x: -384px;}
-.pk-sprite.graveler {background-position-y:-1156px;background-position-x: -512px;}
-.pk-sprite.golem {background-position-y:-1156px;background-position-x: -640px;}
-.pk-sprite.ponyta {background-position-y:-1156px;background-position-x: -768px;}
-.pk-sprite.rapidash {background-position-y:-1156px;background-position-x: -896px;}
+.pk-sprite.tentacruel {background-position: -256px -1156px;}
+.pk-sprite.geodude {background-position: -384px -1156px;}
+.pk-sprite.graveler {background-position: -512px -1156px;}
+.pk-sprite.golem {background-position: -640px -1156px;}
+.pk-sprite.ponyta {background-position: -768px -1156px;}
+.pk-sprite.rapidash {background-position: -896px -1156px;}
 
-.pk-sprite.slowpoke {background-position-y:-1156px;background-position-x: -1024px;}
-.pk-sprite.slowbro {background-position-y:-1156px;background-position-x: -1156px;}
-.pk-sprite.magnemite {background-position-y:-1284px;background-position-x: -128px;}
-.pk-sprite.magneton {background-position-y:-1284px;background-position-x: -256px;}
-.pk-sprite.farfetchd {background-position-y:-1284px;background-position-x: -384px;}
-.pk-sprite.doduo {background-position-y:-1284px;background-position-x: -512px;}
+.pk-sprite.slowpoke {background-position: -1024px -1156px;}
+.pk-sprite.slowbro {background-position: -1156px -1156px;}
+.pk-sprite.magnemite {background-position: -128px -1284px;}
+.pk-sprite.magneton {background-position: -256px -1284px;}
+.pk-sprite.farfetchd {background-position: -384px -1284px;}
+.pk-sprite.doduo {background-position: -512px -1284px;}
 
-.pk-sprite.dodrio {background-position-y:-1284px;background-position-x: -768px;}
-.pk-sprite.seel {background-position-y:-1284px;background-position-x: -1024px;}
-.pk-sprite.dewgong {background-position-y:-1284px;background-position-x: -1156px;}
-.pk-sprite.grimer {background-position-y:-1412px;background-position-x: -0px;}
-.pk-sprite.muk {background-position-y:-1412px;background-position-x: -128px;}
-.pk-sprite.shellder {background-position-y:-1412px;background-position-x: -256px;}
+.pk-sprite.dodrio {background-position: -768px -1284px;}
+.pk-sprite.seel {background-position: -1024px -1284px;}
+.pk-sprite.dewgong {background-position: -1156px -1284px;}
+.pk-sprite.grimer {background-position: -0px -1412px;}
+.pk-sprite.muk {background-position: -128px -1412px;}
+.pk-sprite.shellder {background-position: -256px -1412px;}
 
-.pk-sprite.cloyster {background-position-y:-1412px;background-position-x: -384px;}
-.pk-sprite.gastly {background-position-y:-1412px;background-position-x: -512px;}
-.pk-sprite.haunter {background-position-y:-1412px;background-position-x: -640px;}
-.pk-sprite.gengar {background-position-y:-1412px;background-position-x: -768px;}
-.pk-sprite.onix {background-position-y:-1412px;background-position-x: -1024px;}
-.pk-sprite.drowzee {background-position-y:-1412px;background-position-x: -1156px;}
+.pk-sprite.cloyster {background-position: -384px -1412px;}
+.pk-sprite.gastly {background-position: -512px -1412px;}
+.pk-sprite.haunter {background-position: -640px -1412px;}
+.pk-sprite.gengar {background-position: -768px -1412px;}
+.pk-sprite.onix {background-position: -1024px -1412px;}
+.pk-sprite.drowzee {background-position: -1156px -1412px;}
 
-.pk-sprite.hypno {background-position-y:-1540px;background-position-x: -0px;}
-.pk-sprite.krabby {background-position-y:-1540px;background-position-x: -256px;}
-.pk-sprite.kingler {background-position-y:-1540px;background-position-x: -384px;}
-.pk-sprite.voltorb {background-position-y:-1540px;background-position-x: -512px;}
-.pk-sprite.electrode {background-position-y:-1540px;background-position-x: -640px;}
-.pk-sprite.exeggcute {background-position-y:-1540px;background-position-x: -768px;}
+.pk-sprite.hypno {background-position: -0px -1540px;}
+.pk-sprite.krabby {background-position: -256px -1540px;}
+.pk-sprite.kingler {background-position: -384px -1540px;}
+.pk-sprite.voltorb {background-position: -512px -1540px;}
+.pk-sprite.electrode {background-position: -640px -1540px;}
+.pk-sprite.exeggcute {background-position: -768px -1540px;}
 
-.pk-sprite.exeggutor {background-position-y:-1540px;background-position-x: -896px;}
-.pk-sprite.cubone {background-position-y:-1540px;background-position-x: -1024px;}
-.pk-sprite.marowak {background-position-y:-1540px;background-position-x: -1156px;}
-.pk-sprite.hitmonlee {background-position-y:-1668px;background-position-x: -0px;}
-.pk-sprite.hitmonchan {background-position-y:-1668px;background-position-x: -128px;}
-.pk-sprite.lickitung {background-position-y:-1668px;background-position-x: -256px;}
+.pk-sprite.exeggutor {background-position: -896px -1540px;}
+.pk-sprite.cubone {background-position: -1024px -1540px;}
+.pk-sprite.marowak {background-position: -1156px -1540px;}
+.pk-sprite.hitmonlee {background-position: -0px -1668px;}
+.pk-sprite.hitmonchan {background-position: -128px -1668px;}
+.pk-sprite.lickitung {background-position: -256px -1668px;}
 
-.pk-sprite.koffing {background-position-y:-1668px;background-position-x: -384px;}
-.pk-sprite.weezing {background-position-y:-1668px;background-position-x: -512px;}
-.pk-sprite.rhyhorn {background-position-y:-1668px;background-position-x: -640px;}
-.pk-sprite.rhydon {background-position-y:-1668px;background-position-x: -896px;}
-.pk-sprite.chansey {background-position-y:-1668px;background-position-x: -1156px;}
-.pk-sprite.tangela {background-position-y:-1796px;background-position-x: -0px;}
+.pk-sprite.koffing {background-position: -384px -1668px;}
+.pk-sprite.weezing {background-position: -512px -1668px;}
+.pk-sprite.rhyhorn {background-position: -640px -1668px;}
+.pk-sprite.rhydon {background-position: -896px -1668px;}
+.pk-sprite.chansey {background-position: -1156px -1668px;}
+.pk-sprite.tangela {background-position: -0px -1796px;}
 
-.pk-sprite.kangaskhan {background-position-y:-1796px;background-position-x: -128px;}
-.pk-sprite.horsea {background-position-y:-1796px;background-position-x: -256px;}
-.pk-sprite.horsea {background-position-y:-1796px;background-position-x: -384px;}
-.pk-sprite.seadra {background-position-y:-1796px;background-position-x: -512px;}
-.pk-sprite.goldeen {background-position-y:-1796px;background-position-x: -640px;}
-.pk-sprite.seaking {background-position-y:-1796px;background-position-x: -896px;}
+.pk-sprite.kangaskhan {background-position: -128px -1796px;}
+.pk-sprite.horsea {background-position: -256px -1796px;}
+.pk-sprite.horsea {background-position: -384px -1796px;}
+.pk-sprite.seadra {background-position: -512px -1796px;}
+.pk-sprite.goldeen {background-position: -640px -1796px;}
+.pk-sprite.seaking {background-position: -896px -1796px;}
 
-.pk-sprite.staryu {background-position-y:-1796px;background-position-x: -1156px;}
-.pk-sprite.starmie {background-position-y:-1924px;background-position-x: -0px;}
-.pk-sprite.mr.mime {background-position-y:-1924px;background-position-x: -128px;}
-.pk-sprite.scyther {background-position-y:-1924px;background-position-x: -256px;}
-.pk-sprite.jynx {background-position-y:-1924px;background-position-x: -512px;}
-.pk-sprite.electabuzz {background-position-y:-1924px;background-position-x: -640px;}
+.pk-sprite.staryu {background-position: -1156px -1796px;}
+.pk-sprite.starmie {background-position: -0px -1924px;}
+.pk-sprite.mr.mime {background-position: -128px -1924px;}
+.pk-sprite.scyther {background-position: -256px -1924px;}
+.pk-sprite.jynx {background-position: -512px -1924px;}
+.pk-sprite.electabuzz {background-position: -640px -1924px;}
 
-.pk-sprite.magmar {background-position-y:-1924px;background-position-x: -768px;}
-.pk-sprite.pinsir {background-position-y:-1924px;background-position-x: -896px;}
-.pk-sprite.tauros {background-position-y:-1924px;background-position-x: -1156px;}
-.pk-sprite.magikarp {background-position-y:-2052px;background-position-x: -0px;}
-.pk-sprite.gyarados {background-position-y:-2052px;background-position-x: -256px;}
-.pk-sprite.lapras {background-position-y:-2052px;background-position-x: -640px;}
+.pk-sprite.magmar {background-position: -768px -1924px;}
+.pk-sprite.pinsir {background-position: -896px -1924px;}
+.pk-sprite.tauros {background-position: -1156px -1924px;}
+.pk-sprite.magikarp {background-position: -0px -2052px;}
+.pk-sprite.gyarados {background-position: -256px -2052px;}
+.pk-sprite.lapras {background-position: -640px -2052px;}
 
-.pk-sprite.ditto {background-position-y:-2052px;background-position-x: -768px;}
-.pk-sprite.eevee {background-position-y:-2052px;background-position-x: -896px;}
-.pk-sprite.vaporeon {background-position-y:-2052px;background-position-x: -1024px;}
-.pk-sprite.jolteon {background-position-y:-2052px;background-position-x: -1156px;}
-.pk-sprite.flareon {background-position-y:-2180px;background-position-x: -0px;}
-.pk-sprite.porygon {background-position-y:-2180px;background-position-x: -128px;}
+.pk-sprite.ditto {background-position: -768px -2052px;}
+.pk-sprite.eevee {background-position: -896px -2052px;}
+.pk-sprite.vaporeon {background-position: -1024px -2052px;}
+.pk-sprite.jolteon {background-position: -1156px -2052px;}
+.pk-sprite.flareon {background-position: -0px -2180px;}
+.pk-sprite.porygon {background-position: -128px -2180px;}
 
-.pk-sprite.omanyte {background-position-y:-2180px;background-position-x: -256px;}
-.pk-sprite.omastar {background-position-y:-2180px;background-position-x: -384px;}
-.pk-sprite.kabuto {background-position-y:-2180px;background-position-x: -512px;}
-.pk-sprite.kabutops {background-position-y:-2180px;background-position-x: -640px;}
-.pk-sprite.aerodactyl {background-position-y:-2180px;background-position-x: -768px;}
-.pk-sprite.snorlax {background-position-y:-2180px;background-position-x: -1024px;}
+.pk-sprite.omanyte {background-position: -256px -2180px;}
+.pk-sprite.omastar {background-position: -384px -2180px;}
+.pk-sprite.kabuto {background-position: -512px -2180px;}
+.pk-sprite.kabutops {background-position: -640px -2180px;}
+.pk-sprite.aerodactyl {background-position: -768px -2180px;}
+.pk-sprite.snorlax {background-position: -1024px -2180px;}
 
-.pk-sprite.articuno {background-position-y:-2180px;background-position-x: -1156px;}
-.pk-sprite.zapdos {background-position-y:-2308px;background-position-x: -0px;}
-.pk-sprite.moltres {background-position-y:-2308px;background-position-x: -128px;}
-.pk-sprite.dratini {background-position-y:-2308px;background-position-x: -256px;}
-.pk-sprite.dragonair {background-position-y:-2308px;background-position-x: -384px;}
-.pk-sprite.dragonite {background-position-y:-2308px;background-position-x: -512px;}
-.pk-sprite.mewtwo {background-position-y:-2308px;background-position-x: -640px;}
-.pk-sprite.mew {background-position-y:-2308px;background-position-x: -1024px;}
+.pk-sprite.articuno {background-position: -1156px -2180px;}
+.pk-sprite.zapdos {background-position: -0px -2308px;}
+.pk-sprite.moltres {background-position: -128px -2308px;}
+.pk-sprite.dratini {background-position: -256px -2308px;}
+.pk-sprite.dragonair {background-position: -384px -2308px;}
+.pk-sprite.dragonite {background-position: -512px -2308px;}
+.pk-sprite.mewtwo {background-position: -640px -2308px;}
+.pk-sprite.mew {background-position: -1024px -2308px;}
 
 .pikalytics-link {
   color: #fdd800;
