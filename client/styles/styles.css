@@ -326,8 +326,16 @@ position:relative;
 border-bottom: 1px solid #e2e2e2;
 }
 
+#pk_special_move_info {
+display: block;
+width: 100%;
+margin-top: 20px;
+position:relative;
+border-bottom: 1px solid #e2e2e2;
+}
+
 .pk-moves-info-title {
-margin-top:35px;
+margin-top:15px;
 margin-bottom:15px;
 color: #717171;
 text-transform: uppercase;
@@ -337,6 +345,31 @@ text-transform: uppercase;
 position: relative;
 height: 60px;
 color:#3C4741;
+}
+
+.pk-move-title {
+position: absolute;
+top: 10px;
+left: 40px;
+text-transform: capitalize;
+color:#3c605c;
+}
+
+.pk-move-damage {
+position: absolute;
+top: 10px;
+right: 40px;
+text-transform: capitalize;
+color:#3c605c;
+}
+
+.pk-move-type {
+color:#B3B7B5;
+font-size: 14px;
+position: absolute;
+left: 40px;
+top: 30px;
+text-transform: capitalize;
 }
 
 .pk-sprite.bulbasaur {background-position-x: 0px;}

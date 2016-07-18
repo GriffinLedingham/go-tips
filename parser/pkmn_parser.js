@@ -1,4 +1,5 @@
 var data = require('../data/pokemon.json')
+var moves = require('../data/move_data.json')
 var cp_data = require('../data/cp_up.json')
 var jsonfile = require('jsonfile')
 
@@ -96,7 +97,17 @@ for(var i in data){
         if(data[k].hasOwnProperty('Move')){
           if(data[k]['TemplateId'].indexOf(move_id) != -1){
             var move_name = data[k]['TemplateId'].split('MOVE_')[1].toLowerCase()
+
+            var move_data = false
+            for(var move_index in moves){
+              if(moves[move_index]['id'] == move_id){
+                move_data = moves[move_index]
+              }
+            }
+
             quick_moves[j] = {id: move_id, name: move_name.replace(/\_/g,' ').replace(' fast', '')}
+            if(move_data != false)
+              quick_moves[j] = move_data
             break
           }
         }
@@ -109,7 +120,17 @@ for(var i in data){
         if(data[k].hasOwnProperty('Move')){
           if(data[k]['TemplateId'].indexOf(move_id) != -1){
             var move_name = data[k]['TemplateId'].split('MOVE_')[1].toLowerCase()
+
+            var move_data = false
+            for(var move_index in moves){
+              if(moves[move_index]['id'] == move_id){
+                move_data = moves[move_index]
+              }
+            }
+
             cine_moves[j] = {id: move_id, name: move_name.replace(/\_/g,' ').replace(' fast', '')}
+            if(move_data != false)
+              cine_moves[j] = move_data
             break
           }
         }

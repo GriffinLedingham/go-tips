@@ -57,6 +57,26 @@
           </div>
           {{/if}}
         </div>
+        <div id="pk_basic_move_info">
+          {{#quick_moves}}
+          <div class="pk-move-item">
+            <span class="pk-move-title">{{name}}</span>
+            <span class="pk-move-type">{{type}}</span>
+            <span class="pk-move-damage">{{power}}</span>
+          </div>
+          {{/quick_moves}}
+          <div class="pk-moves-info-title">Basic Attacks</div>
+        </div>
+        <div id="pk_special_move_info">
+          {{#special_moves}}
+          <div class="pk-move-item">
+            <span class="pk-move-title">{{name}}</span>
+            <span class="pk-move-type">{{type}}</span>
+            <span class="pk-move-damage">{{power}}</span>
+          </div>
+          {{/special_moves}}
+          <div class="pk-moves-info-title">Special Attacks</div>
+        </div>
 
         {{#if evolution}}
         <div id="pk_evolve_info">
