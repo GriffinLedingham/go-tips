@@ -434,7 +434,7 @@ border-radius:5px;
 .pk-sprite.charmeleon {background-position: -768px 0px;}
 .pk-sprite.charizard {background-position: -896px 0px;}
 
-.pk-sprite.squirtle {background-position: 0px; -128px;}
+.pk-sprite.squirtle {background-position: 0px -128px;}
 .pk-sprite.wartortle {background-position: -128px -128px;}
 .pk-sprite.blastoise {background-position: -256px -128px;}
 .pk-sprite.caterpie {background-position: -512px -128px;}
@@ -443,14 +443,14 @@ border-radius:5px;
 
 .pk-sprite.weedle {background-position: -1028px -128px;}
 .pk-sprite.kakuna {background-position: -1156px -128px;}
-.pk-sprite.beedrill {background-position: 0px; -256px;}
+.pk-sprite.beedrill {background-position: 0px -256px;}
 .pk-sprite.pidgey {background-position: -256px -256px;}
 .pk-sprite.pidgeotto {background-position: -384px -256px;}
 .pk-sprite.pidgeot {background-position: -512px -256px;}
 
 .pk-sprite.rattata {background-position: -768px -256px;}
 .pk-sprite.raticate {background-position: -1028px -256px;}
-.pk-sprite.spearow {background-position: 0px; -384px;}
+.pk-sprite.spearow {background-position: 0px -384px;}
 .pk-sprite.fearow {background-position: -128px -384px;}
 .pk-sprite.ekans {background-position: -256px -384px;}
 .pk-sprite.arbok {background-position: -384px -384px;}
