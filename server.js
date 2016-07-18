@@ -8,6 +8,8 @@ var handlebars = require('./helpers/handlebars_helper')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.use('/favicon.ico', express.static('images/favicon.png'))
+
 app.use(express.static(__dirname + '/client'))
 
 app.get('/', function(req, res){

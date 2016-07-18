@@ -190,6 +190,7 @@ for(var i in data){
 
     var output = {
       name: name,
+      name_cap: name[0].toUpperCase() + name.slice(1),
       id: id,
       type: type,
       encounter: {
