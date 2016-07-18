@@ -117,7 +117,6 @@ for(var i in data){
     }
 
     var evolution = false
-    var family = false
 
     if(pokemon.hasOwnProperty('Evolution')){
       var evolution_encoded = pokemon['Evolution']
@@ -131,7 +130,13 @@ for(var i in data){
           if(data[k].hasOwnProperty('Pokemon')){
             if(data[k]['TemplateId'].indexOf(evolution) != -1){
               var poke_name = data[k]['TemplateId'].split('POKEMON_')[1].toLowerCase()
-              evolution = {id: evolution, name: poke_name}
+              evolution = {id: evolution, name: poke_name, candy: name}
+              for(var index in pokemon_data){
+                if(typeof pokemon_data[index].evolution != 'undefined'
+                  && pokemon_data[index].evolution.name == name) {
+                  evolution.candy = pokemon_data[index].evolution.candy
+                }
+              }
               break
             }
           }
@@ -146,7 +151,13 @@ for(var i in data){
               if(data[k].hasOwnProperty('Pokemon')){
                 if(data[k]['TemplateId'].indexOf(temp_evolution) != -1){
                   var poke_name = data[k]['TemplateId'].split('POKEMON_')[1].toLowerCase()
-                  evolution.push({id: temp_evolution, name: poke_name})
+                  evolution.push({id: temp_evolution, name: poke_name, candy: name})
+                  for(var index in pokemon_data){
+                    if(typeof pokemon_data[index].evolution != 'undefined'
+                      && pokemon_data[index].evolution.name == name) {
+                      evolution.candy = pokemon_data[index].evolution.candy
+                    }
+                  }
                   break
                 }
               }
@@ -179,7 +190,6 @@ for(var i in data){
     if(evolution != false) {
       output.evolution = evolution
       output.evolution_cost = pokemon['CandyToEvolve']
-      output.family = family
     }
     pokemon_data.push(output)
   }
