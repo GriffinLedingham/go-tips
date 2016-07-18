@@ -365,13 +365,31 @@ color:#3c605c;
 }
 
 .pk-move-type {
-color:#B3B7B5;
 font-size: 14px;
 position: absolute;
 left: 40px;
 top: 30px;
 text-transform: capitalize;
 }
+
+.pk-move-type.normal {color:    #A8A878;}
+.pk-move-type.fire {color:      #F08030;}
+.pk-move-type.water {color:     #6890F0;}
+.pk-move-type.grass {color:     #78c850;}
+.pk-move-type.electric {color:  #f8d030;}
+.pk-move-type.ice {color:       #98d8d8;}
+.pk-move-type.ground {color:    #e0c068;}
+.pk-move-type.flying {color:    #a890f0;}
+.pk-move-type.poison {color:    #a040a0;}
+.pk-move-type.fighting {color:  #c03028;}
+.pk-move-type.psychic {color:   #f85888;}
+.pk-move-type.dark {color:      #705848;}
+.pk-move-type.rock {color:      #b8a038;}
+.pk-move-type.bug {color:       #a8b820;}
+.pk-move-type.ghost {color:     #705898;}
+.pk-move-type.steel {color:     #b8b8d0;}
+.pk-move-type.dragon {color:    #7038f8;}
+.pk-move-type.fairy {color:     #ffaec9;}
 
 .pk-sprite.bulbasaur {background-position-x: 0px;}
 .pk-sprite.ivysaur {background-position-x: -128px;}
