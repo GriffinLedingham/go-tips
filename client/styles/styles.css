@@ -84,26 +84,26 @@ z-index: 1;
 }
 
 .left-nav-button {
-  margin-left:25px;
-  margin-right:45px;
-  padding: 10px;
-  color: grey;
-  display: block;
+margin-left:25px;
+margin-right:45px;
+padding: 10px;
+color: grey;
+display: block;
 }
 
 .left-nav-category {
-  margin-left:25px;
-  margin-right:45px;
-  padding: 10px;
-  color: grey;
-  border-bottom: 1px solid lightgrey;
-  display: block;
+margin-left:25px;
+margin-right:45px;
+padding: 10px;
+color: grey;
+border-bottom: 1px solid lightgrey;
+display: block;
 }
 
 .left-nav-item {
-  color: grey;
-  padding:10px;
-  margin-left: 45px;
+color: grey;
+padding:10px;
+margin-left: 45px;
 }
 
 #contents {
@@ -128,6 +128,7 @@ margin-bottom: 100px;
 text-align: center;
 border-radius: 3px;
 min-height:525px;
+display:inline-block;
 }
 
 #pk_contents {
@@ -198,10 +199,10 @@ z-index: 2;
 
 #pk_profile_sprite {
 position: absolute;
-    bottom: -30px;
-    margin: auto;
-    left: 0;
-    right: 0;
+bottom: -30px;
+margin: auto;
+left: 0;
+right: 0;
 }
 
 #pk_sprite_wrapper {
@@ -360,7 +361,7 @@ text-transform: capitalize;
 }
 
 .cp-upgrade {
-  color: #32b741;
+color: #32b741;
 }
 
 #pk_evolve_info {
@@ -660,5 +661,5 @@ border-radius:5px;
 .pk-sprite.mew {background-position: -1024px -2308px;}
 
 .pikalytics-link {
-  color: #fdd800;
+color: #fdd800;
 }

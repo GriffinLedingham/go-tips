@@ -20,7 +20,10 @@ module.exports = {
         params.left_nav = left_nav
         this.loadTemplate('header.handlebars',{},(header)=>{
           params.header = header
-          cb(template(params))
+          this.loadTemplate('footer.handlebars',{data:articles},(footer)=>{
+            params.footer = footer
+            cb(template(params))
+          })
         })
       })
     })
