@@ -13,8 +13,10 @@ app.use('/favicon.ico', express.static(__dirname + '/client/images/favicon.ico')
 
 app.get('/', function(req, res){
   var data = require('./data/pokemon_data.json')
-  res.send(handlebars.loadTemplate('pokedex.handlebars', {pokemon: data}))
-  res.end()
+  handlebars.loadPage('pokedex.handlebars', {pokemon: data}, (data)=>{
+    res.send(data)
+    res.end()
+  })
 })
 
 app.get('/pokemon/:pokemon', function(req, res){
@@ -28,16 +30,15 @@ app.get('/pokemon/:pokemon', function(req, res){
       }
     }
   }
-  if(pokemon != false)
-    res.send(handlebars.loadTemplate('pokemon.handlebars', pokemon))
-  else
+  if(pokemon != false){
+    handlebars.loadPage('pokemon.handlebars', pokemon, (data)=>{
+      res.send(data)
+      res.end()
+    })
+  } else {
     res.send(404)
-  res.end()
-})
-
-app.get('/tips/:pokemon', function(req, res){
-  res.send(handlebars.loadTemplate('tips.handlebars', {pokemon: req.params.pokemon}))
-  res.end()
+    res.end()
+  }
 })
 
 app.get('*', function(req, res){

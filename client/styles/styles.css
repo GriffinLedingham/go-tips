@@ -53,23 +53,39 @@ margin-top: -10px;
 }
 
 #content_wrapper {
-position:absolute;
-top:80px;
-left:0;
-right:0;
-bottom:0;
-overflow-y:scroll;
+position: absolute;
+top: 40px;
+left: 250px;
+right: 0;
+bottom: 0;
+overflow-y: scroll;
 text-align: center;
-padding-top:50px;
-padding-bottom:0px;
+padding-top: 50px;
+padding-bottom: 0px;
+}
+
+#left_nav {
+position: fixed;
+left: 0;
+top: 90px;
+height: 600px;
+width: 160px;
+margin-left: 10px;
+margin-right: 30px;
+background: #fafafa;
+box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
+padding: 50px;
+margin-bottom: 100px;
+text-align: center;
+border-radius: 3px;
 }
 
 #contents {
 margin-left: 30px;
-margin-right: 30px;
+margin-right: 10px;
 background: #fafafa;
 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.43);
-padding:50px;
+padding: 50px;
 margin-bottom: 100px;
 text-align: center;
 border-radius: 3px;
