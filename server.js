@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use(express.static(__dirname + '/client'))
-app.use('/favicon.ico', express.static('client/images/favicon.ico'))
+app.use('/favicon.ico', express.static(__dirname + '/client/images/favicon.ico'))
 
 app.get('/', function(req, res){
   var data = require('./data/pokemon_data.json')
