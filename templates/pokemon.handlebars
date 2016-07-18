@@ -40,12 +40,12 @@
             <div class="pk-upgrade-info-item-text cp-upgrade">+{{stats.cp}} CP</div>
             <div class="pk-upgrade-info-item-title">CP Per Upgrade</div>
           </div>
-          {{#evolution}}
+          {{#if evolution}}
           <div class="pk-upgrade-info-item">
-            <div class="pk-upgrade-info-item-text">{{../evolution_cost}}</div>
-            <div class="pk-upgrade-info-item-title">{{../name}} CANDIES</div>
+            <div class="pk-upgrade-info-item-text">{{evolution_cost}}</div>
+            <div class="pk-upgrade-info-item-title">{{evolution.candy}} CANDIES</div>
           </div>
-          {{/evolution}}
+          {{/if}}
         </div>
 
         <!-- <br><br>
