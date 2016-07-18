@@ -1,3 +1,9 @@
 <div id="left_nav">
-  asd
+  <a href="/" class="left-nav-button">Home</a>
+  {{#data}}
+    <div class="left-nav-category">{{title}}</div>
+    {{#articles}}
+      <a href="/article/{{slug}}" class="left-nav-item">{{name}}</a>
+    {{/articles}}
+  {{/data}}
 </div>
