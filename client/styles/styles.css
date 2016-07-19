@@ -45,19 +45,19 @@ font-style: italic;
 }
 
 strong{
-font-weight: bold; 
+font-weight: bold;
 }
 
-#article_title {
+#article_text h1 {
 font-size: 40px;
 font-weight: bold;
 text-align: left;
 }
 
-.article_sub_title {
+#article_text h2 {
 font-size: 20px;
 font-weight: bold;
-text-align: center;
+text-align: left;
 margin-bottom: 30px;
 }
 
@@ -93,10 +93,12 @@ padding-top: 50px;
 #article_text p{
 text-align: left;
 margin-bottom: 30px;
+margin-left:40px;
 }
 
 #article_text ol,#article_text ul{
-  margin-bottom:25px; 
+  margin-bottom:25px;
+  margin-left: 40px;
 }
 
 #article_text li{

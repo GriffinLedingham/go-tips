@@ -76,12 +76,12 @@ app.get('/pokemon/:pokemon', function(req, res){
   }
 })
 
-app.get('/article/:article_name', function(req, res){
+app.get('/article/:article_folder/:article_name', function(req, res){
   var file = false
   for(var category in articles){
     for(var article_item in articles[category]['articles']){
       var item = articles[category]['articles'][article_item]
-      if(item.slug == req.params['article_name']){
+      if(item.slug == req.params['article_folder']+'/'+req.params['article_name']){
         file = item
         break
       }

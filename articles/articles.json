@@ -1,18 +1,19 @@
 [
   {
-    "title": "Game Mechanics",
+    "title": "PokeStops",
     "articles": [
       {
-        "name": "PokeStops",
-        "slug": "pokestop"
-      },
+        "name": "PokeStop Overview",
+        "slug": "pokestop/overview"
+      }
+    ]
+  },
+  {
+    "title": "Gyms",
+    "articles": [
       {
-        "name": "Encounters",
-        "slug": "encounter"
-      },
-      {
-        "name": "Gyms",
-        "slug": "gym"
+        "name": "Gym Overview",
+        "slug": "gym/overview"
       }
     ]
   }
