@@ -1,19 +1,14 @@
 [
   {
-    "title": "Gyms",
+    "title": "Game Mechanics",
     "articles": [
       {
-        "name": "How To Beat Gym",
-        "slug": "beat_gym"
-      }
-    ]
-  },
-  {
-    "title": "Eggs",
-    "articles": [
+        "name": "PokeStops",
+        "slug": "pokestop"
+      },
       {
-        "name": "How To Eat Egg",
-        "slug": "eat_egg"
+        "name": "Encounters",
+        "slug": "encounter"
       }
     ]
   }
