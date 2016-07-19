@@ -20,6 +20,40 @@ app.get('/', function(req, res){
   })
 })
 
+app.get('/moves/special/', function(req, res){
+  var data = require('./data/move_data.json')
+  var spec_moves = []
+  for(var move_in in data){
+    if(data[move_in].hasOwnProperty('energy_array')){
+      spec_moves.push(data[move_in])
+    }
+  }
+  spec_moves = spec_moves.sort(function(a, b){
+    return a.name.localeCompare(b.name);
+  });
+  handlebars.loadPage('moves.handlebars', {moves: spec_moves}, (data)=>{
+    res.send(data)
+    res.end()
+  })
+})
+
+app.get('/moves/basic/', function(req, res){
+  var data = require('./data/move_data.json')
+  var basic_moves = []
+  for(var move_in in data){
+    if(!data[move_in].hasOwnProperty('energy_array')){
+      basic_moves.push(data[move_in])
+    }
+  }
+  basic_moves = basic_moves.sort(function(a, b){
+    return a.name.localeCompare(b.name);
+  });
+  handlebars.loadPage('moves.handlebars', {moves: basic_moves}, (data)=>{
+    res.send(data)
+    res.end()
+  })
+})
+
 app.get('/pokemon/:pokemon', function(req, res){
   var data = require('./data/pokemon_data.json')
   var pokemon = false
@@ -76,4 +110,4 @@ app.get('*', function(req, res){
 })
 
 var server = http.createServer(app)
-server.listen(process.env.PORT || 3000)
+server.listen(3001)

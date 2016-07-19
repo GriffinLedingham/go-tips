@@ -11,10 +11,11 @@ for(var i in data){
     var type = move['Type'].split('TYPE_')[1].toLowerCase()
     var accuracy = move['AccuracyChance']
     var crit = move['CriticalChance']
-    var duration = move['DurationMs']
+    var duration = move['DurationMs']/1000
     var energy = move['EnergyDelta']
     var power = move['Power']
     var energy_array = false
+    var dps = (power/(duration)).toFixed(2)
 
     if(energy < 0){
       console.log(energy)
@@ -33,7 +34,8 @@ for(var i in data){
       accuracy: accuracy,
       crit: crit,
       duration: duration,
-      energy: energy
+      energy: energy,
+      dps: dps
     }
     if(energy_array != false)
       output.energy_array = energy_array
