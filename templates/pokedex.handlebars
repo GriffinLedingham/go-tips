@@ -21,6 +21,7 @@
             <div class="pk-glow"></div>
             <div class="pk-sprite {{name}}"></div>
             <span class="pk-name">{{name}}</span>
+            <span class="pk-type">{{type}}</span>
           </a>
           {{/pokemon}}
         </ul>
@@ -31,7 +32,7 @@
   <script src="/scripts/list.js"></script>
   <script>
     var options = {
-      valueNames: [ 'pk-name' ]
+      valueNames: [ 'pk-name', 'pk-type' ]
     };
 
     var pokeList = new List('content_wrapper', options);
