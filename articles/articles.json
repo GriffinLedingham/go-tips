@@ -9,6 +9,10 @@
       {
         "name": "Encounters",
         "slug": "encounter"
+      },
+      {
+        "name": "Gyms",
+        "slug": "gym"
       }
     ]
   }
