@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Gyms",
+    "articles": [
+      {
+        "name": "How To Beat Gym",
+        "slug": "beat_gym"
+      }
+    ]
+  },
+  {
+    "title": "Eggs",
+    "articles": [
+      {
+        "name": "How To Eat Egg",
+        "slug": "eat_egg"
+      }
+    ]
+  }
+]

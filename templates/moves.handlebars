@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta property="og:description" content="The source for Pokémon GO info! Evolutions, stats, moves and more." />
-    <meta property="og:title" content="PoGoDex | Pokemon GO Stats and Information" />
+    <meta property="og:title" content="Moves | PoGoDex | Pokemon GO Stats and Information" />
     <meta name="Description" CONTENT="The source for Pokémon GO info! Evolutions, stats, moves and more.">
     <title>PoGoDex | Pokemon GO Stats and Information</title>
   </head>
@@ -13,17 +13,27 @@
     {{{header}}}
     {{{left_nav}}}
     <div id="content_wrapper">
-      <div id="contents" class="pk-list">
+      <div id="mv_contents">
         <div id="input_wrapper"><input id="search" class="search" placeholder="Search" /></div>
         <ul class="list">
-          {{#pokemon}}
-          <a class="pokedex-item" href="/pokemon/{{name}}">
-            <div class="pk-glow"></div>
-            <div class="pk-sprite {{name}}"></div>
-            <span class="pk-name">{{name}}</span>
-            <span class="pk-type">{{type}}</span>
-          </a>
-          {{/pokemon}}
+          {{#moves}}
+          <div class="move-item">
+            <div class="pk-move-title">{{name}}</div>
+            <div class="pk-move-cost">
+              {{#energy_array}}<div class="pk-move-cost-item" style="width:{{percent}}px;"></div>{{/energy_array}}
+            </div>
+            <span class="pk-move-type {{type}}">{{type}}</span>
+            <span class="pk-move-damage">{{power}}</span>
+            <div class="move-item-details">
+              <div class="move-item-details-text-left">
+                Duration: <span class="move-item-stat">{{duration}}</span>s
+              </div>
+              <div class="move-item-details-text-right">
+                DPS: <span class="move-item-stat">{{dps}}</span>
+              </div>
+            </div>
+          </div>
+          {{/moves}}
         </ul>
       </div>
       {{{footer}}}
@@ -32,7 +42,7 @@
   <script src="/scripts/list.js"></script>
   <script>
     var options = {
-      valueNames: [ 'pk-name', 'pk-type' ]
+      valueNames: [ 'pk-move-title', 'pk-move-type' ]
     };
 
     var pokeList = new List('content_wrapper', options);
