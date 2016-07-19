@@ -61,6 +61,7 @@
           {{/if}}
         </div>
         <div id="pk_basic_move_info">
+          <div class="pk-moves-info-title">Basic Attacks</div>
           {{#quick_moves}}
           <div class="pk-move-item">
             <span class="pk-move-title">{{name}}</span>
@@ -68,9 +69,9 @@
             <span class="pk-move-damage">{{power}}</span>
           </div>
           {{/quick_moves}}
-          <div class="pk-moves-info-title">Basic Attacks</div>
         </div>
         <div id="pk_special_move_info">
+          <div class="pk-moves-info-title">Special Attacks</div>
           {{#special_moves}}
           <div class="pk-move-item">
             <div class="pk-move-title">{{name}}</div>
@@ -81,18 +82,17 @@
             <span class="pk-move-damage">{{power}}</span>
           </div>
           {{/special_moves}}
-          <div class="pk-moves-info-title">Special Attacks</div>
         </div>
 
         {{#if evolution}}
         <div id="pk_evolve_info">
+          <div class="pk-evolve-info-title">Evolutions</div>
           {{#evolution}}
           <a href="/pokemon/{{name}}" class="pk-evolve-info-item">
             <div class="pk-sprite {{name}}"></div>
             <div class="pk-evolve-info-item-title">{{name}}</div>
           </a>
           {{/evolution}}
-          <div class="pk-evolve-info-title">Evolutions</div>
         </div>
         {{/if}}
       </div>
