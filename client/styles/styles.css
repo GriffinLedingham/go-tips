@@ -44,6 +44,7 @@ outline: none;
 z-index: 1;
 width: 90%;
 margin: auto;
+height:65px;
 }
 
 #header {
@@ -511,7 +512,7 @@ padding-bottom: 15px;
 
 .pk-moves-info-title {
 margin-top:15px;
-margin-bottom:15px;
+margin-bottom:35px;
 color: #717171;
 text-transform: uppercase;
 }
