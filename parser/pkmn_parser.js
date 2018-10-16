@@ -10,6 +10,9 @@ for(var i in data){
     var pokemon = data[i]
     var name = pokemon['id'].toLowerCase()
     var id = pokemon['dex']
+
+    if(!isLive(id)) continue
+
     var type = []
     for(var typeIn in pokemon['types']) {
       type.push('<span class="pk-mon-type '+pokemon['types'][typeIn]['name'].toLowerCase()+'">'+pokemon['types'][typeIn]['name'].toLowerCase()+'</span>')
@@ -149,4 +152,37 @@ function stripForm(name) {
           .replace(' sunny', '')
           .replace(' rainy', '')
           .replace(' snowy', '')
+}
+
+function isLive(number) {
+  var result = true
+  if(number > 386) {
+    var liveGen4 = [
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      427,
+      428,
+      441,
+      455
+    ]
+
+    if(liveGen4.indexOf(number) == -1) {
+      result = false
+    }
+  }
+  return result
 }
