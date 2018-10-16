@@ -18,15 +18,15 @@
           <div id="pk_sprite_sphere"></div>
           <div id="pk_sprite_sphere_dot"></div>
         </div>
-        <img id="pk_profile_sprite" src="/images/sprites/{{name}}.png" />
+        <img id="pk_profile_sprite" src="/images/pokemon_icons/pokemon_icon_{{id_pad}}_{{form}}.png" />
       </div>
       <div id="pk_contents">
-        <div id="pk_name">{{name}}</div>
+        <div id="pk_name">{{name_clean}}</div>
         <div id="pk_health_bar"></div>
         <div id="pk_health">HP {{stats.hp}} / {{stats.hp}}</div>
         <div id="pk_info">
           <div class="pk-info-item">
-            <div class="pk-info-item-text">{{type}}</div>
+            <div class="pk-info-item-text">{{{type}}}</div>
             <div class="pk-info-item-title">Type</div>
           </div>
           <div class="pk-info-item">
@@ -50,8 +50,8 @@
         </div>
         <div id="pk_upgrade_info">
           <div class="pk-upgrade-info-item">
-            <div class="pk-upgrade-info-item-text cp-upgrade">+{{stats.cp}} CP (+/-)</div>
-            <div class="pk-upgrade-info-item-title">CP Per Upgrade</div>
+            <div class="pk-upgrade-info-item-text cp-upgrade">{{stats.cp}}</div>
+            <div class="pk-upgrade-info-item-title">Max CP</div>
           </div>
           {{#if evolution}}
           <div class="pk-upgrade-info-item">
@@ -89,7 +89,9 @@
           <div class="pk-evolve-info-title">Evolutions</div>
           {{#evolution}}
           <a href="/pokemon/{{name}}" class="pk-evolve-info-item">
-            <div class="pk-sprite {{name}}"></div>
+            <div>
+              <img class="pk-sprite" src="/images/pokemon_icons/pokemon_icon_{{id}}_{{form}}.png">
+            </div>
             <div class="pk-evolve-info-item-title">{{name}}</div>
           </a>
           {{/evolution}}

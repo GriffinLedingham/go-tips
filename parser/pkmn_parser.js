@@ -6,190 +6,91 @@ var jsonfile = require('jsonfile')
 var pokemon_data = []
 
 for(var i in data){
-  if(data[i].hasOwnProperty('Pokemon')){
-    var pokemon = data[i]['Pokemon']
-    var name = pokemon['UniqueID'].split('POKEMON_')[1].toLowerCase().replace('_', ' ')
-    var id = parseInt(pokemon['UniqueID'].split('_POKEMON')[0].replace('V',''))
+  // if(data[i].hasOwnProperty('Pokemon')){
+    var pokemon = data[i]
+    var name = pokemon['id'].toLowerCase()
+    var id = pokemon['dex']
     var type = []
-    if(pokemon.hasOwnProperty('Type1')){
-      type.push(pokemon['Type1'].split('TYPE_')[1].toLowerCase())
-    }
-    if(pokemon.hasOwnProperty('Type2')){
-      type.push(pokemon['Type2'].split('TYPE_')[1].toLowerCase())
+    for(var typeIn in pokemon['types']) {
+      type.push('<span class="pk-mon-type '+pokemon['types'][typeIn]['name'].toLowerCase()+'">'+pokemon['types'][typeIn]['name'].toLowerCase()+'</span>')
     }
 
     type = type.join().replace(',',' / ')
 
-    var height = pokemon['PokedexHeightM']
-    var weight = pokemon['PokedexWeightKg']
+    var height = pokemon['height']
+    var weight = pokemon['weight']
 
-    height = parseFloat(height-pokemon['HeightStdDev']).toFixed(2) + ' - ' + parseFloat(height+pokemon['HeightStdDev']).toFixed(2)
-    weight = parseFloat(weight-pokemon['WeightStdDev']).toFixed(2) + ' - ' + parseFloat(weight+pokemon['WeightStdDev']).toFixed(2)
+    var encounter = pokemon['encounter']
+    var cap_rate = encounter['baseCaptureRate']
+    var flee_rate = encounter['baseFleeRate']
+    var collision = encounter['collisionRadius']
 
-    var encounter = pokemon['Encounter']
-    var cap_rate = encounter['BaseCaptureRate']
-    var flee_rate = encounter['BaseFleeRate']
-    var collision = encounter['CollisionRadiusM']
+    var stats = pokemon['stats']
+    var stam = stats['baseStamina']
+    var atk = stats['baseAttack']
+    var def = stats['baseDefense']
 
-    var stats = pokemon['Stats']
-    var stam = stats['BaseStamina']
-    var atk = stats['BaseAttack']
-    var def = stats['BaseDefense']
+    var cp = pokemon['maxCP']
 
-    var cp = '?'
-    if(cp_data.hasOwnProperty(name[0].toUpperCase() + name.slice(1))){
-      cp = cp_data[name[0].toUpperCase() + name.slice(1)]
-    }
-
-    var quick_moves_encoded = pokemon['QuickMoves']
+    var quick_moves_encoded = pokemon['quickMoves']
     var quick_moves = []
 
-    if(quick_moves_encoded.indexOf('\\001') != -1){
-      var move_arr = quick_moves_encoded.split('\\001')
-      for(var j in move_arr){
-        if(move_arr[j] != ''){
-          var item = move_arr[j]
-          move_arr[j] = parseInt(item.replace('\\',''),8)
-          quick_moves.push(move_arr[j])
+    for(var qmIn in quick_moves_encoded) {
+      var moveId = quick_moves_encoded[qmIn]['id']
+      for(var mIn in moves) {
+        if(moves[mIn]['id'] == moveId) {
+          var tempMove = moves[mIn]
+          quick_moves.push({
+            name:tempMove['name'],
+            type:tempMove['type'].toLowerCase(),
+            power:tempMove['power']
+          })
+          break;
         }
-      }
-    } else {
-      var octal_moves = quick_moves_encoded.match(/\\[0-9]+/g)
-      quick_moves_encoded = quick_moves_encoded.replace(/\\[0-9]+/g, '')
-      if(octal_moves != null){
-        for(var j = 0;j<octal_moves.length;j++){
-          quick_moves.push(parseInt(octal_moves[j].replace('\\',''),8))
-        }
-      }
-      for(var j = 0;j<quick_moves_encoded.length;j++){
-        quick_moves.push(parseInt(quick_moves_encoded[j].charCodeAt(0).toString(16),16))
       }
     }
 
-    var cine_moves_encoded = pokemon['CinematicMoves']
+    var cine_moves_encoded = pokemon['cinematicMoves']
     var cine_moves = []
 
-    if(cine_moves_encoded.indexOf('\\001') != -1){
-      var move_arr = cine_moves_encoded.split('\\001')
-      for(var j in move_arr){
-        if(move_arr[j] != ''){
-          var item = move_arr[j]
-          move_arr[j] = parseInt(item.replace('\\',''),8)
-          cine_moves.push(move_arr[j])
-        }
-      }
-    } else {
-      var octal_moves = cine_moves_encoded.match(/\\[0-9]+/g)
-      cine_moves_encoded = cine_moves_encoded.replace(/\\[0-9]+/g, '')
-      if(octal_moves != null){
-        for(var j = 0;j<octal_moves.length;j++){
-          cine_moves.push(parseInt(octal_moves[j].replace('\\',''),8))
-        }
-      }
-      for(var j = 0;j<cine_moves_encoded.length;j++){
-        cine_moves.push(parseInt(cine_moves_encoded[j].charCodeAt(0).toString(16),16))
-      }
-    }
-
-    for(var j = 0;j<quick_moves.length;j++){
-      var move_id = quick_moves[j]
-      for(var k = 0;k<data.length;k++){
-        if(data[k].hasOwnProperty('Move')){
-          if(data[k]['TemplateId'].indexOf(move_id) != -1){
-            var move_name = data[k]['TemplateId'].split('MOVE_')[1].toLowerCase()
-
-            var move_data = false
-            for(var move_index in moves){
-              if(moves[move_index]['id'] == move_id){
-                move_data = moves[move_index]
-              }
-            }
-
-            quick_moves[j] = {id: move_id, name: move_name.replace(/\_/g,' ').replace(' fast', '')}
-            if(move_data != false)
-              quick_moves[j] = move_data
-            break
-          }
-        }
-      }
-    }
-    for(var j = 0;j<cine_moves.length;j++){
-      var move_id = cine_moves[j]
-      for(var k = 0;k<data.length;k++){
-        if(data[k].hasOwnProperty('Move')){
-          if(data[k]['TemplateId'].indexOf(move_id) != -1){
-            var move_name = data[k]['TemplateId'].split('MOVE_')[1].toLowerCase()
-            var move_data = false
-            for(var move_index in moves){
-              if(moves[move_index]['id'] == move_id){
-                move_data = moves[move_index]
-              }
-            }
-
-            cine_moves[j] = {id: move_id, name: move_name.replace(/\_/g,' ').replace(' fast', '')}
-            if(move_data != false)
-              cine_moves[j] = move_data
-            break
-          }
+    for(var qmIn in cine_moves_encoded) {
+      var moveId = cine_moves_encoded[qmIn]['id']
+      for(var mIn in moves) {
+        if(moves[mIn]['id'] == moveId) {
+          var tempMove = moves[mIn]
+          cine_moves.push({
+            name:tempMove['name'],
+            type:tempMove['type'].toLowerCase(),
+            power:tempMove['power'],
+            energy_array:tempMove['energy_array']
+          })
+          break;
         }
       }
     }
 
     var evolution = false
+    var evolution_cost = false
 
-    if(pokemon.hasOwnProperty('Evolution')){
-      var evolution_encoded = pokemon['Evolution']
-      if(evolution_encoded.indexOf('\\001') == -1){
-        if(evolution_encoded.indexOf('\\') != -1){
-          evolution = parseInt(evolution_encoded.replace('\\',''),8)
-        } else {
-          evolution = parseInt(evolution_encoded.charCodeAt(0).toString(16),16)
-        }
-        for(var k = 0;k<data.length;k++){
-          if(data[k].hasOwnProperty('Pokemon')){
-            if(data[k]['TemplateId'].indexOf(evolution) != -1){
-              var poke_name = data[k]['TemplateId'].split('POKEMON_')[1].toLowerCase()
-              evolution = {id: evolution, name: poke_name, candy: name}
-              for(var index in pokemon_data){
-                if(typeof pokemon_data[index].evolution != 'undefined'
-                  && pokemon_data[index].evolution.name == name) {
-                  evolution.candy = pokemon_data[index].evolution.candy
-                }
-              }
-              break
-            }
-          }
-        }
-      } else {
-        var evo_array = pokemon['Evolution'].split('\\001')
-        evolution = []
-        for(var z = 0;z<evo_array.length;z++){
-          if(evo_array[z] != '') {
-            var temp_evolution = parseInt(evo_array[z].replace('\\',''),8)
-            for(var k = 0;k<data.length;k++){
-              if(data[k].hasOwnProperty('Pokemon')){
-                if(data[k]['TemplateId'].indexOf(temp_evolution) != -1){
-                  var poke_name = data[k]['TemplateId'].split('POKEMON_')[1].toLowerCase()
-                  evolution.push({id: temp_evolution, name: poke_name, candy: name})
-                  for(var index in pokemon_data){
-                    if(typeof pokemon_data[index].evolution != 'undefined'
-                      && pokemon_data[index].evolution.name == name) {
-                      evolution.candy = pokemon_data[index].evolution.candy
-                    }
-                  }
-                  break
-                }
-              }
-            }
-          }
+    if(pokemon.hasOwnProperty('evolution') && pokemon['evolution'].hasOwnProperty('futureBranches')){
+      evolution = {name: pokemon['evolution']['futureBranches'][0]['name'].toLowerCase(), candy:pokemon['family']['name'].toLowerCase()}
+      for(var pkIn in data) {
+        if(data[pkIn]['name'].toLowerCase() == pokemon['evolution']['futureBranches'][0]['name'].toLowerCase()) {
+          evolution['id'] = pad(data[pkIn]['dex'],3)
+          break
         }
       }
+      evolution['form'] = getForm(evolution['name'])
+      evolution_cost = pokemon['evolution']['futureBranches'][0]['costToEvolve']['candyCost']
     }
 
     var output = {
-      name: name,
+      name: jsUcfirst(name.replace('_',' ')),
+      name_clean: stripForm(jsUcfirst(name.replace('_',' '))),
       name_cap: name[0].toUpperCase() + name.slice(1),
       id: id,
+      form: getForm(jsUcfirst(name.replace('_',' '))),
+      id_pad: pad(id,3),
       type: type,
       encounter: {
         flee_rate: parseFloat(flee_rate),
@@ -209,9 +110,43 @@ for(var i in data){
     }
     if(evolution != false) {
       output.evolution = evolution
-      output.evolution_cost = pokemon['CandyToEvolve']
+      output.evolution_cost = evolution_cost
     }
     pokemon_data.push(output)
-  }
+  // }
 }
 jsonfile.writeFileSync('../data/pokemon_data.json', pokemon_data)
+
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
+function jsUcfirst(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function getForm(name) {
+  var form = '00'
+  var n = (name.toLowerCase())
+  if(n.indexOf('alola') != -1) {
+    form = 61
+  } else if(n.indexOf('rainy') != -1) {
+    form = 13
+  } else if(n.indexOf('sunny') != -1) {
+    form = 12
+  } else if(n.indexOf('snowy') != -1) {
+    form = 14
+  }
+  return form
+}
+
+function stripForm(name) {
+  return name
+          .replace(' alola', '')
+          .replace(' sunny', '')
+          .replace(' rainy', '')
+          .replace(' snowy', '')
+}

@@ -19,8 +19,10 @@
           {{#pokemon}}
           <a class="pokedex-item" href="/pokemon/{{name}}">
             <div class="pk-glow"></div>
-            <div class="pk-sprite {{name}}"></div>
-            <span class="pk-name">{{name}}</span>
+            <div>
+              <img class="pk-sprite" src="/images/pokemon_icons/pokemon_icon_{{id_pad}}_{{form}}.png">
+            </div>
+            <span class="pk-name">{{name_clean}}</span>
             <span class="pk-type">{{type}}</span>
           </a>
           {{/pokemon}}

@@ -1,3 +1,6 @@
 node_modules/
 pokemon.json
+move.json
 quick_moves.json
+.DS_Store
+

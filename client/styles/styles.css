@@ -291,7 +291,6 @@ display:none;
 }
 
 .pk-sprite {
-background: url('/images/sprites.png');
 height: 128px;
 width: 128px;
 position:relative;
@@ -539,6 +538,11 @@ text-transform: capitalize;
 color:#3c605c;
 }
 
+.pk-mon-type {
+font-size: 14px;
+text-transform: capitalize;
+}
+
 .pk-move-type {
 font-size: 14px;
 position: absolute;
@@ -585,6 +589,24 @@ border-radius:5px;
 .pk-move-type.steel {color:     #b8b8d0;}
 .pk-move-type.dragon {color:    #7038f8;}
 .pk-move-type.fairy {color:     #ffaec9;}
+.pk-mon-type.normal {color:    #A8A878;}
+.pk-mon-type.fire {color:      #F08030;}
+.pk-mon-type.water {color:     #6890F0;}
+.pk-mon-type.grass {color:     #78c850;}
+.pk-mon-type.electric {color:  #f8d030;}
+.pk-mon-type.ice {color:       #98d8d8;}
+.pk-mon-type.ground {color:    #e0c068;}
+.pk-mon-type.flying {color:    #a890f0;}
+.pk-mon-type.poison {color:    #a040a0;}
+.pk-mon-type.fighting {color:  #c03028;}
+.pk-mon-type.psychic {color:   #f85888;}
+.pk-mon-type.dark {color:      #705848;}
+.pk-mon-type.rock {color:      #b8a038;}
+.pk-mon-type.bug {color:       #a8b820;}
+.pk-mon-type.ghost {color:     #705898;}
+.pk-mon-type.steel {color:     #b8b8d0;}
+.pk-mon-type.dragon {color:    #7038f8;}
+.pk-mon-type.fairy {color:     #ffaec9;}
 
 .pk-sprite.bulbasaur {background-position: 0px 0px;}
 .pk-sprite.ivysaur {background-position: -128px 0px;}
