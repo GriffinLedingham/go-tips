@@ -140,7 +140,17 @@ function getForm(name) {
     form = 13
   } else if(n.indexOf('sunny') != -1) {
     form = 12
-  } else if(n.indexOf('snowy') != -1) {
+  }
+  else if(n.indexOf('snowy') != -1) {
+    form = 14
+  }
+  else if(n.indexOf('attack') != -1) {
+    form = 12
+  }
+  else if(n.indexOf('defense') != -1) {
+    form = 13
+  }
+  else if(n.indexOf('speed') != -1) {
     form = 14
   }
   return form
