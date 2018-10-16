@@ -97,6 +97,47 @@
           {{/evolution}}
         </div>
         {{/if}}
+
+        {{#if next}}
+          <div id="pk_next_prev">
+        {{^}}
+          {{#if last}}
+            <div id="pk_next_prev">
+          {{/if}}
+        {{/if}}
+
+        {{#if last}}
+          {{#last}}
+          <a class="pokedex-item" href="/pokemon/{{name}}">
+            <div class="pk-glow"></div>
+            <span class="pk-evolve-info-title">Prev</span>
+            <div>
+              <img class="pk-sprite-small" src="/images/pokemon_icons/pokemon_icon_{{id_pad}}_{{form}}.png">
+            </div>
+            <span class="pk-name">{{name}}</span>
+          </a>
+          {{/last}}
+        {{/if}}
+        {{#if next}}
+          {{#next}}
+          <a class="pokedex-item" href="/pokemon/{{name}}">
+            <div class="pk-glow"></div>
+            <span class="pk-evolve-info-title">Next</span>
+            <div>
+              <img class="pk-sprite-small" src="/images/pokemon_icons/pokemon_icon_{{id_pad}}_{{form}}.png">
+            </div>
+            <span class="pk-name">{{name}}</span>
+          </a>
+          {{/next}}
+        {{/if}}
+
+        {{#if next}}
+          </div>
+        {{^}}
+          {{#if last}}
+            </div>
+          {{/if}}
+        {{/if}}
       </div>
       {{{footer}}}
     </div>

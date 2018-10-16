@@ -115,6 +115,30 @@ for(var i in data){
       output.evolution = evolution
       output.evolution_cost = evolution_cost
     }
+
+    var next_pokemon = false
+    var last_pokemon = false
+
+    if(data.hasOwnProperty(parseInt(i)-1) && isLive(data[parseInt(i)-1]['dex'])) {
+      last_pokemon = {
+        name: jsUcfirst(data[parseInt(i)-1]['id'].toLowerCase().replace('_',' ')),
+        id: data[parseInt(i)-1]['dex'],
+        form: getForm(jsUcfirst(data[parseInt(i)-1]['id'].toLowerCase().replace('_',' '))),
+        id_pad: pad(data[parseInt(i)-1]['dex'], 3)
+      }
+      output['last'] = last_pokemon
+    }
+
+    if(data.hasOwnProperty(parseInt(i)+1) && isLive(data[parseInt(i)+1]['dex'])) {
+      next_pokemon = {
+        name: jsUcfirst(data[parseInt(i)+1]['id'].toLowerCase().replace('_',' ')),
+        id: data[parseInt(i)+1]['dex'],
+        form: getForm(jsUcfirst(data[parseInt(i)+1]['id'].toLowerCase().replace('_',' '))),
+        id_pad: pad(data[parseInt(i)+1]['dex'], 3)
+      }
+      output['next'] = next_pokemon
+    }
+
     pokemon_data.push(output)
   // }
 }
